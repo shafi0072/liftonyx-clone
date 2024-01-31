@@ -35,4 +35,16 @@ export const displayBottle = [
       },
     ],
   },
+  {
+    title: "ONYS Flax - 600 ML",
+    money: "TK 3,021.46",
+    review: "3",
+    availability: "3 colors available",
+    image: [
+      {
+        bottle1Image: "/assets/bottle/bottle1.webp",
+        bottle2Image: "/assets/bottle/bottle2.webp",
+      },
+    ],
+  },
 ];
