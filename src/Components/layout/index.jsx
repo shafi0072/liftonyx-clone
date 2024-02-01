@@ -3,11 +3,11 @@ import Navbar from "../core/shared/Navbar/";
 
 const index = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
-      <div>{children}</div>
+      {children}
       <Footer />
-    </div>
+    </>
   );
 };
 

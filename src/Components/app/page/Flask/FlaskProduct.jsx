@@ -6,7 +6,7 @@ import SecondaryButton from "@/src/Components/core/shared/SecondaryButton/Second
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
-import { accessoriesProduct } from "@/src/constant/accessories";
+import { flaskProduct } from "@/src/constant/Flask";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const featured = [
@@ -34,11 +34,12 @@ const featured = [
   {
     title: "Date, Old to New",
   },
+  flaskProduct,
 ];
 
-const AccessoriesProduct = () => {
+const FlaskProduct = () => {
   const [hoveredStates, setHoveredStates] = useState(
-    Array(accessoriesProduct.length)
+    Array(flaskProduct.length)
       .fill(0)
       .map(() => Array(4).fill(false))
   );
@@ -58,7 +59,7 @@ const AccessoriesProduct = () => {
     <div className="mt-5">
       <div className="flex justify-between mb-3">
         <div>
-          <h1>{accessoriesProduct?.length} product</h1>
+          <h1>{flaskProduct?.length} product</h1>
         </div>
         <div>
           <PopupState variant="popover" popupId="demo-popup-menu">
@@ -71,9 +72,11 @@ const AccessoriesProduct = () => {
                   </h1>
                   <ArrowDropDownIcon className="cursor-pointer"/>
                 </div>
-                <Menu {...bindMenu(popupState)} className="rounded-md">
+                <Menu {...bindMenu(popupState)}> 
                   {featured.map((list, index) => (
-                    <MenuItem key={index} onClick={popupState.close}>{list?.title}</MenuItem>
+                    <MenuItem key={index} onClick={popupState.close}>
+                      {list?.title}
+                    </MenuItem>
                   ))}
                 </Menu>
               </React.Fragment>
@@ -82,7 +85,7 @@ const AccessoriesProduct = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {accessoriesProduct?.map((item, itemIndex) => (
+        {flaskProduct?.map((item, itemIndex) => (
           <div key={itemIndex}>
             {item?.image?.map((bottle, imageIndex) => (
               <div
@@ -137,4 +140,4 @@ const AccessoriesProduct = () => {
   );
 };
 
-export default AccessoriesProduct;
+export default FlaskProduct;

@@ -1,4 +1,4 @@
-import { navbarLogo } from "@/src/constant/home/home";
+import { logo, navbarLogo } from "@/src/constant/home/home";
 import { navMenu } from "@/src/constant/home/navbar";
 import Link from "next/link";
 import { BsCart2 } from "react-icons/bs";
