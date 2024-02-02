@@ -5,7 +5,7 @@ import Filter from "./Filter";
 
 const Accessories = () => {
   return (
-    <div className="w-full px-5 md:flex max-w-screen-xl mx-auto">
+    <div className="w-full px-5 md:flex ">
       <div className="md:w-3/12 w-full">
         <div className="mt-3">
           <Link href={"/"}>Home</Link> /

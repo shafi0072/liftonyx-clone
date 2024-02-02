@@ -9,7 +9,7 @@ import SectionTitle from "../../core/shared/SectionTitle/SectionTitle";
 
 const StayUpToDate = () => {
   return (
-    <div className="container mx-auto px-3 py-20">
+    <div className="max-w-screen-xl mx-auto px-3 py-20">
       <div className="pb-10">
         <SectionTitle
           subTitle={stayUpToDateSubHeading}
@@ -19,7 +19,7 @@ const StayUpToDate = () => {
 
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="lg:w-[55%]">
-          <img className="w-full h-full" src={stayUpToDateImage1} alt="" />
+          <img className="w-full h-full rounded-xl" src={stayUpToDateImage1} alt="" />
           <h2 className="text-4xl mt-8 font-semibold mx-1">
             {stayUpToDateImage1Description}
           </h2>
@@ -29,7 +29,7 @@ const StayUpToDate = () => {
           {stayUpToDateRightSection?.map((item, index) => (
             <div key={index} className="flex flex-col md:flex-row gap-5 mb-10">
               <div className="flex-1">
-                <img className="" src={item?.stayUpToDateImage} alt="" />
+                <img className=" rounded-xl" src={item?.stayUpToDateImage} alt="" />
               </div>
               <div className="flex-1 flex items-center">
                 <div>

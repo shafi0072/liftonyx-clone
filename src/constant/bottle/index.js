@@ -1,6 +1,7 @@
 export const bottleProduct = [
   {
-    title: "ONYS Flax - 600 ML",
+    id:"1",
+    title: "ONYS Flax - 700 ML",
     money: "TK 3,021.46",
     review: "3",
     availability: "3 colors available",
@@ -12,7 +13,8 @@ export const bottleProduct = [
     ],
   },
   {
-    title: "ONYS Flax - 600 ML",
+    id:"2",
+    title: "ONYS Flax - 400 ML",
     money: "TK 3,021.46",
     review: "4",
     availability: "3 colors available",
@@ -24,6 +26,7 @@ export const bottleProduct = [
     ],
   },
   {
+    id:"3",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "5",
@@ -36,7 +39,8 @@ export const bottleProduct = [
     ],
   },
   {
-    title: "ONYS Flax - 600 ML",
+    id:"4",
+    title: "ONYS Flax - 700 ML",
     money: "TK 3,021.46",
     review: "3",
     availability: "3 colors available",
@@ -48,7 +52,8 @@ export const bottleProduct = [
     ],
   },
   {
-    title: "ONYS Flax - 600 ML",
+    id:"5",
+    title: "ONYS Flax - 100 ML",
     money: "TK 3,021.46",
     review: "3",
     availability: "3 colors available",
@@ -60,7 +65,8 @@ export const bottleProduct = [
     ],
   },
   {
-    title: "ONYS Flax - 600 ML",
+    id:"6",
+    title: "ONYS Flax - 300 ML",
     money: "TK 3,021.46",
     review: "3",
     availability: "3 colors available",
@@ -72,7 +78,8 @@ export const bottleProduct = [
     ],
   },
   {
-    title: "ONYS Flax - 600 ML",
+    id:"7",
+    title: "ONYS Flax - 200 ML",
     money: "TK 3,021.46",
     review: "5",
     availability: "3 colors available",
@@ -84,7 +91,8 @@ export const bottleProduct = [
     ],
   },
   {
-    title: "ONYS Flax - 600 ML",
+    id:"8",
+    title: "ONYS Flax - 500 ML",
     money: "TK 3,021.46",
     review: "4",
     availability: "3 colors available",

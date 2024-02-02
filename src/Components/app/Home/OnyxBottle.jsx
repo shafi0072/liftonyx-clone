@@ -35,7 +35,7 @@ const OnyxBottle = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {displayBottle?.slice(0,3).map((item, itemIndex) => (
+        {displayBottle?.slice(0, 3).map((item, itemIndex) => (
           <div key={itemIndex}>
             {item?.image?.map((bottle, imageIndex) => (
               <div
@@ -45,7 +45,7 @@ const OnyxBottle = () => {
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
                 <img
-                  className="w-full h-full"
+                  className="w-full h-full rounded-md"
                   src={
                     hoveredStates[itemIndex][imageIndex]
                       ? bottle?.bottle2Image
@@ -58,6 +58,7 @@ const OnyxBottle = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
+                        item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart

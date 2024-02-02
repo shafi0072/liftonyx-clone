@@ -3,6 +3,7 @@ export const introducingFlaskButtonText = "SHOP FLask";
 
 export const displayFlask = [
   {
+    id:"0",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "3",
@@ -15,6 +16,7 @@ export const displayFlask = [
     ],
   },
   {
+    id:"1",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "4",
@@ -27,6 +29,7 @@ export const displayFlask = [
     ],
   },
   {
+    id:"2",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "5",

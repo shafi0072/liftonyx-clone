@@ -1,5 +1,6 @@
 export const displayBottle = [
   {
+    id:"0",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "3",
@@ -12,6 +13,7 @@ export const displayBottle = [
     ],
   },
   {
+    id:"1",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "4",
@@ -24,6 +26,7 @@ export const displayBottle = [
     ],
   },
   {
+    id:"2",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "5",
@@ -36,6 +39,7 @@ export const displayBottle = [
     ],
   },
   {
+    id:"3",
     title: "ONYS Flax - 600 ML",
     money: "TK 3,021.46",
     review: "3",

@@ -1,14 +1,32 @@
+import Swal from "sweetalert2";
+
 const SecondaryButton = ({ title, item, type }) => {
   const handleAddToCart = () => {
-    // Retrieve existing cart items from localStorage
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // Add the new item to the array
-    const newItem = { ...item }; // Assuming `item` is an object, spread its properties
-    existingCartItems.push(newItem);
+    const isItemInCart = existingCartItems.some(
+      (cartItem) => cartItem?.id === item?.id
+    );
 
-    // Save the updated cart items back to localStorage
-    localStorage.setItem("cart", JSON.stringify(existingCartItems));
+    if (isItemInCart) {
+      Swal.fire({
+        icon: "warning",
+        title: "Item is already in the cart",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    } else {
+      const newItem = { ...item };
+      existingCartItems.push(newItem);
+      localStorage.setItem("cart", JSON.stringify(existingCartItems));
+      Swal.fire({
+        position: "top-center",
+        icon: "success",
+        title: "Item added to the cart",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
   };
 
   return (

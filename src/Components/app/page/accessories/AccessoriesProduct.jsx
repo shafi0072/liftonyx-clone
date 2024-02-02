@@ -7,7 +7,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import { accessoriesProduct } from "@/src/constant/accessories";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const featured = [
   {
@@ -69,11 +69,13 @@ const AccessoriesProduct = () => {
                     Sort by{" "}
                     <span className="font-medium cursor-pointer">Featured</span>
                   </h1>
-                  <ArrowDropDownIcon className="cursor-pointer"/>
+                  <ArrowDropDownIcon className="cursor-pointer" />
                 </div>
                 <Menu {...bindMenu(popupState)} className="rounded-md">
                   {featured.map((list, index) => (
-                    <MenuItem key={index} onClick={popupState.close}>{list?.title}</MenuItem>
+                    <MenuItem key={index} onClick={popupState.close}>
+                      {list?.title}
+                    </MenuItem>
                   ))}
                 </Menu>
               </React.Fragment>
@@ -105,6 +107,7 @@ const AccessoriesProduct = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
+                        item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart

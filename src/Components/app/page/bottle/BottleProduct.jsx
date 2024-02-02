@@ -107,6 +107,7 @@ const BottleProduct = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
+                      item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart

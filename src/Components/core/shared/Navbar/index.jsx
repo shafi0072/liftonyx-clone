@@ -1,6 +1,5 @@
 import { logo, navbarLogo } from "@/src/constant/home/home";
 import { navMenu } from "@/src/constant/home/navbar";
-import Link from "next/link";
 import { BsCart2 } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
 import dynamic from "next/dynamic";
@@ -13,27 +12,25 @@ const DynamicLink = dynamic(() => import("next/link"), {
 
 const index = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [cartItem, setCartItem]= useState(0);
+  
 
   const handleButtonClick = () => {
     setDrawerOpen(!isDrawerOpen);
   };
-  const [cartItem, setCartItem]= useState(0)
+  
 
   useEffect(() => {
     const cartData = localStorage.getItem("cart");
 
     if (cartData) {
-      // Parse the data if it exists
       const parsedCartData = JSON.parse(cartData);
-
-      // Check if it's an array or object
       const length = Array.isArray(parsedCartData)
         ? parsedCartData.length
         : Object.keys(parsedCartData).length;
 
       setCartItem(length);
     } else {
-      // Handle the case when "cart" key is not in localStorage
       setCartItem(0);
     }
   }, [cartItem]);

@@ -10,9 +10,9 @@ import SecondaryButton from "../../core/shared/SecondaryButton/SecondaryButton";
 const WhyWeCreatedOnyx = () => {
   return (
     <div className="relative">
-      <div className="container mx-auto px-3">
+      <div className="max-w-screen-xl mx-auto px-3">
         <img
-          className="lg:absolute lg:top-12 w-full lg:w-[500px]"
+          className="lg:absolute lg:top-12 w-full lg:w-[500px] rounded-xl"
           src={whyWeCreatedOnyxImage}
           alt=""
         />

@@ -3,10 +3,10 @@ import React from "react";
 
 const FooterTop = () => {
   return (
-    <div>
+    <div className="bg-gray-300">
       {imageIcon?.map((item, index) => {
         <div key={index}>
-          <img src={item?.image} alt="" />;
+          <img src='https://liftonyx.com/cdn/shop/files/Leakproof_3_300x.png?v=1685880276' alt="" />;
         </div>;
       })}
     </div>
