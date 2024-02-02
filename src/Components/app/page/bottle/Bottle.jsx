@@ -11,9 +11,7 @@ const Bottle = () => {
           <Link href={"/"}>Home</Link> /<Link href={"/bottle"}>Bottle</Link>
         </div>
         <div className="mt-32 ">
-          <h1 className="text-3xl md:block hidden font-semibold">
-            Filter
-          </h1>
+          <h1 className="text-3xl md:block hidden font-semibold">Filter</h1>
           <div>
             <Filter />
           </div>

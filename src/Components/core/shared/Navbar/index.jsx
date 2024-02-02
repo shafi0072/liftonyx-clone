@@ -4,12 +4,41 @@ import Link from "next/link";
 import { BsCart2 } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
 import dynamic from "next/dynamic";
+import { CartDrawer } from "./CartDrawer";
+import { useEffect, useState } from "react";
 const DynamicLink = dynamic(() => import("next/link"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
 
 const index = () => {
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+
+  const handleButtonClick = () => {
+    setDrawerOpen(!isDrawerOpen);
+  };
+  const [cartItem, setCartItem]= useState(0)
+
+  useEffect(() => {
+    const cartData = localStorage.getItem("cart");
+
+    if (cartData) {
+      // Parse the data if it exists
+      const parsedCartData = JSON.parse(cartData);
+
+      // Check if it's an array or object
+      const length = Array.isArray(parsedCartData)
+        ? parsedCartData.length
+        : Object.keys(parsedCartData).length;
+
+      setCartItem(length);
+    } else {
+      // Handle the case when "cart" key is not in localStorage
+      setCartItem(0);
+    }
+  }, [cartItem]);
+
+
   const navLink = (
     <>
       {navMenu.map((item, index) => (
@@ -65,12 +94,13 @@ const index = () => {
           <div className="hidden lg:flex">
             <IoMdSearch className="text-xl mr-3"></IoMdSearch>
           </div>
-          <button>
-            <BsCart2 className="text-2xl"></BsCart2>
+          <button onClick={handleButtonClick}>
+            <BsCart2 className="text-2xl" />
             <div className="bg-white rounded-full text-[8px] text-black absolute p-1 top-2 right-0">
-              +0
+              +{cartItem}
             </div>
           </button>
+          {isDrawerOpen && <CartDrawer />}
         </div>
       </div>
     </div>

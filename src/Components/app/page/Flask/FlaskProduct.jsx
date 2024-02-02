@@ -7,7 +7,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import { flaskProduct } from "@/src/constant/Flask";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const featured = [
   {
@@ -70,9 +70,9 @@ const FlaskProduct = () => {
                     Sort by{" "}
                     <span className="font-medium cursor-pointer">Featured</span>
                   </h1>
-                  <ArrowDropDownIcon className="cursor-pointer"/>
+                  <ArrowDropDownIcon className="cursor-pointer" />
                 </div>
-                <Menu {...bindMenu(popupState)}> 
+                <Menu {...bindMenu(popupState)}>
                   {featured.map((list, index) => (
                     <MenuItem key={index} onClick={popupState.close}>
                       {list?.title}
@@ -108,6 +108,7 @@ const FlaskProduct = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
+                        item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart
