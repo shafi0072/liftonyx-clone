@@ -5,6 +5,7 @@ import SecondaryButton from "../../core/shared/SecondaryButton/SecondaryButton";
 import { FaPlus } from "react-icons/fa6";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { productData } from "@/src/constant/Flask";
 
 const OnyxBottle = () => {
   const [hoveredStates, setHoveredStates] = useState(
@@ -35,7 +36,7 @@ const OnyxBottle = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {displayBottle?.slice(0, 3).map((item, itemIndex) => (
+        {productData?.slice(8,11).map((item, itemIndex) => (
           <div key={itemIndex}>
             {item?.image?.map((bottle, imageIndex) => (
               <div

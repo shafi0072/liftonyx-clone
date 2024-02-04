@@ -1,32 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import PrimaryButton from "@/src/Components/core/shared/PrimaryButton/PrimaryButton";
 
 const Details = ({ id }) => {
-    console.log(id)
+  const [count, setCount] = useState(1);
+  const [selectedProductImage, setSelectedProductImage] = useState(null);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  };
+
   const productData = localStorage.getItem("cart");
   const parseData = JSON.parse(productData);
   const product = parseData && parseData?.find((data) => data?.id === id);
-  console.log(product);
+
+  const parseMoney = (money) => {
+    return parseFloat(money.replace(/,/g, "").replace(/[^\d.-]/g, "")).toFixed(
+      2
+    );
+  };
+
+  const calculateTotalPrice = () => {
+    if (product?.money && typeof product.money === "string") {
+      const moneyAsNumber = parseMoney(product.money);
+      if (!isNaN(moneyAsNumber)) {
+        return (moneyAsNumber * count).toFixed(2);
+      }
+    }
+
+    return 0;
+  };
+
+  const handleProductClick = (image) => {
+    // Set the selected product's image when clicked
+    setSelectedProductImage(image);
+  };
 
   return (
-    <div className="max-w-screen-xl mx-auto mt-20">
-      <div className="flex gap-10">
+    <div className="max-w-screen-xl mx-auto px-5 mt-20">
+      <div className="md:flex justify-between">
         <div>
           <img
-            className="w-3/4 h-[90%] rounded-xl"
-            src="https://liftonyx.com/cdn/shop/files/1_800x.png?v=1699183048"
+            className="md:w-[650px] md:h-[700px] w-full h-full rounded-xl"
+            src={selectedProductImage || product?.image[0]?.bottle1Image}
             alt="product"
           />
         </div>
-        <div>
-          <h1 className="text-4xl font-bold">ONYX Bottle - 2.7L</h1>
+        <div className="mt-10 md:mt-0">
+          <h1 className="text-4xl font-bold">{product?.title}</h1>
           <div className="mt-5">
-            <Rating style={{ maxWidth: 100 }} value={4.5} readOnly />
+            <Rating
+              style={{ maxWidth: 100 }}
+              value={product?.review}
+              readOnly
+            />
           </div>
           <h1 className="text-3xl font-semibold text-red-500 mt-5">
-            tk: 2,090
+            tk: {calculateTotalPrice()}
           </h1>
+          <div className="flex gap-5 mt-20">
+            {product?.productColor?.map((item, index) => (
+              <div key={index} onClick={() => handleProductClick(item?.color)}>
+                <img
+                  src={item?.color}
+                  className="w-20 h-20 rounded-md cursor-pointer"
+                  alt="product details"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="mt-10">
+            <h1>Quantity:</h1>
+            <div className="border-2 cursor-pointer mt-2 py-2 text-lg font-bold flex justify-between px-5 w-40">
+              <div onClick={handleDecrement}>-</div>
+              <div className="border-s-2 border-e-2 px-5">{count}</div>
+              <div onClick={handleIncrement}>+</div>
+            </div>
+          </div>
+          <div className="mt-5">
+            <PrimaryButton title={"CheckOut"} />
+          </div>
         </div>
       </div>
     </div>

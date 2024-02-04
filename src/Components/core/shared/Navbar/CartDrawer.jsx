@@ -74,6 +74,7 @@ export const CartDrawer = () => {
       className="overflow-y-auto"
     >
       <List>
+        <h1 className="text-2xl font-bold ms-5 mt-2 md:hidden">x</h1>
         <h1 className="text-2xl font-bold text-center mb-5">Your Cart Item</h1>
         {cartItem?.map((item, index) => (
           <ListItem key={index}>
@@ -87,7 +88,7 @@ export const CartDrawer = () => {
               </div>
               <h1 className="text-lg font-bold">{item?.title}</h1>
               <div className="gap-2  flex flex-col">
-                <Link href={`/productDetails/${index}`}>
+                <Link href={`/productDetails/${item?.id}`}>
                   <button className="text-white bg-black rounded-md px-4 py-2">
                     Details
                   </button>

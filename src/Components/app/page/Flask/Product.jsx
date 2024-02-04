@@ -6,8 +6,7 @@ import SecondaryButton from "@/src/Components/core/shared/SecondaryButton/Second
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
-import { bottleProduct } from "@/src/constant/bottle";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const featured = [
   {
@@ -36,9 +35,11 @@ const featured = [
   },
 ];
 
-const BottleProduct = () => {
+const FlaskProduct = ({product}) => {
+  
+
   const [hoveredStates, setHoveredStates] = useState(
-    Array(bottleProduct.length)
+    Array(product?.length)
       .fill(0)
       .map(() => Array(4).fill(false))
   );
@@ -58,7 +59,7 @@ const BottleProduct = () => {
     <div className="mt-5">
       <div className="flex justify-between mb-3">
         <div>
-          <h1>{bottleProduct?.length} product</h1>
+          <h1>{product?.length} product</h1>
         </div>
         <div>
           <PopupState variant="popover" popupId="demo-popup-menu">
@@ -69,7 +70,7 @@ const BottleProduct = () => {
                     Sort by{" "}
                     <span className="font-medium cursor-pointer">Featured</span>
                   </h1>
-                  <ArrowDropDownIcon className="cursor-pointer"/>
+                  <ArrowDropDownIcon className="cursor-pointer" />
                 </div>
                 <Menu {...bindMenu(popupState)}>
                   {featured.map((list, index) => (
@@ -84,7 +85,7 @@ const BottleProduct = () => {
         </div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-        {bottleProduct?.map((item, itemIndex) => (
+        {product?.map((item, itemIndex) => (
           <div key={itemIndex}>
             {item?.image?.map((bottle, imageIndex) => (
               <div
@@ -107,7 +108,7 @@ const BottleProduct = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
-                      item={item}
+                        item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart
@@ -140,4 +141,4 @@ const BottleProduct = () => {
   );
 };
 
-export default BottleProduct;
+export default FlaskProduct;

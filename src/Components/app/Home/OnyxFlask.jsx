@@ -6,6 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { displayFlask } from "@/src/constant/home/onyxFlask";
+import { productData } from "@/src/constant/Flask";
 
 const OnyxFlask = () => {
   const [hoveredStates, setHoveredStates] = useState(
@@ -36,7 +37,7 @@ const OnyxFlask = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {displayFlask?.map((item, itemIndex) => (
+        {productData?.slice(0,3)?.map((item, itemIndex) => (
           <div key={itemIndex}>
             {item?.image?.map((flask, imageIndex) => (
               <div
@@ -49,8 +50,8 @@ const OnyxFlask = () => {
                   className="w-full h-full"
                   src={
                     hoveredStates[itemIndex][imageIndex]
-                      ? flask?.flask2Image
-                      : flask?.flask1Image
+                      ? flask?.bottle1Image
+                      : flask?.bottle2Image
                   }
                   alt="Product Image"
                 />

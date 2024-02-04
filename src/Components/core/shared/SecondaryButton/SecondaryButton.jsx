@@ -5,7 +5,7 @@ const SecondaryButton = ({ title, item, type }) => {
     const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
     const isItemInCart = existingCartItems.some(
-      (cartItem) => cartItem?.id === item?.id
+      (cartItem) => cartItem?.title === item?.title
     );
 
     if (isItemInCart) {

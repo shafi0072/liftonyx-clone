@@ -1,4 +1,4 @@
-import Flask from '@/src/Components/app/page/Flask/Flask';
+import Flask from '@/src/Components/app/page/Flask';
 import React from 'react';
 
 const index = () => {

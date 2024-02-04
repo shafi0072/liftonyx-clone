@@ -6,7 +6,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Filter = () => {
+const Filter = ({product}) => {
   const [availability, setAvailability] = React.useState({
     inStock: false,
     outOfStock: false,
@@ -45,7 +45,7 @@ const Filter = () => {
           <AccordionDetails>
             <div className="flex items-center">
               <Checkbox {...label} name="inStock" checked={availability.inStock} onChange={handleCheckboxChange} />
-              <h1>In stock (4)</h1>
+              <h1>In stock ({product?.length})</h1>
             </div>
             <div className="flex items-center">
               <Checkbox {...label} name="outOfStock" checked={availability.outOfStock} onChange={handleCheckboxChange} />

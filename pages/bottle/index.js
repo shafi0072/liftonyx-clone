@@ -1,10 +1,10 @@
-import Bottle from '@/src/Components/app/page/bottle/Bottle';
+import Flask from '@/src/Components/app/page/Flask';
 import React from 'react';
 
 const index = () => {
     return (
         <div>
-            <Bottle/>
+            <Flask/>
         </div>
     );
 };
