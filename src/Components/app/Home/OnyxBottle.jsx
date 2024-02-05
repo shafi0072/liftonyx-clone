@@ -38,7 +38,7 @@ const OnyxBottle = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {productData?.slice(8,11).map((item, itemIndex) => (
           <div key={itemIndex}>
-            {item?.image?.map((bottle, imageIndex) => (
+            {item?.productImage?.map((bottle, imageIndex) => (
               <div
                 key={imageIndex}
                 className="relative group w-full overflow-hidden"
@@ -49,8 +49,8 @@ const OnyxBottle = () => {
                   className="w-full h-full rounded-md"
                   src={
                     hoveredStates[itemIndex][imageIndex]
-                      ? bottle?.bottle2Image
-                      : bottle?.bottle1Image
+                      ? bottle?.mainImage2
+                      : bottle?.mainImage1
                   }
                   alt="Product Image"
                 />

@@ -4,24 +4,24 @@ export const productData = [
     title: "ONYS Flax - 100 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productColorImage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -32,24 +32,24 @@ export const productData = [
     title: "ONYS Flax - 200 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -60,24 +60,24 @@ export const productData = [
     title: "ONYS Flax - 300 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -88,24 +88,24 @@ export const productData = [
     title: "ONYS Flax - 400 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -116,24 +116,24 @@ export const productData = [
     title: "ONYS Flax - 500 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -144,24 +144,24 @@ export const productData = [
     title: "ONYS Flax - 600 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -172,24 +172,24 @@ export const productData = [
     title: "ONYS Flax - 700 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -200,24 +200,24 @@ export const productData = [
     title: "ONYS Flax - 800 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -228,24 +228,24 @@ export const productData = [
     title: "ONYS Bottle - 100 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -256,24 +256,24 @@ export const productData = [
     title: "ONYS Bottle - 200 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -284,24 +284,24 @@ export const productData = [
     title: "ONYS Bottle - 300 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -312,24 +312,24 @@ export const productData = [
     title: "ONYS Bottle - 400 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -340,24 +340,24 @@ export const productData = [
     title: "ONYS Bottle - 500 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -368,24 +368,24 @@ export const productData = [
     title: "ONYS Bottle - 600 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -396,24 +396,24 @@ export const productData = [
     title: "ONYS Bottle - 700 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -424,24 +424,24 @@ export const productData = [
     title: "ONYS Bottle - 800 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -452,24 +452,24 @@ export const productData = [
     title: "ONYS Accessories - 100 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -480,24 +480,24 @@ export const productData = [
     title: "ONYS Accessories - 200 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -508,24 +508,24 @@ export const productData = [
     title: "ONYS Accessories - 300 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -536,24 +536,24 @@ export const productData = [
     title: "ONYS Accessories - 400 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -564,24 +564,24 @@ export const productData = [
     title: "ONYS Accessories - 500 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -592,24 +592,24 @@ export const productData = [
     title: "ONYS Accessories - 600 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -620,24 +620,24 @@ export const productData = [
     title: "ONYS Accessories - 700 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],
@@ -648,24 +648,24 @@ export const productData = [
     title: "ONYS Accessories - 800 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 colors available",
+    availability: "3 images available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productColor: [
+    productimage: [
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5260.jpg?v=1693673437",
       },
       {
-        color:
+        image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5265.jpg?v=1693673913",
       },
     ],

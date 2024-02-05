@@ -98,8 +98,8 @@ const FlaskProduct = ({product}) => {
                   className="w-full h-full"
                   src={
                     hoveredStates[itemIndex][imageIndex]
-                      ? bottle?.bottle2Image
-                      : bottle?.bottle1Image
+                      ? bottle?.mainImage2
+                      : bottle?.mainImage1
                   }
                   alt="Product Image"
                 />

@@ -7,8 +7,8 @@ export const displayBottle = [
     availability: "3 colors available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
   },
@@ -20,8 +20,8 @@ export const displayBottle = [
     availability: "3 colors available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle3.webp",
-        bottle2Image: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/bottle/bottle3.webp",
+        mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
   },
@@ -33,8 +33,8 @@ export const displayBottle = [
     availability: "3 colors available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle5.webp",
-        bottle2Image: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/bottle/bottle5.webp",
+        mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
   },
@@ -46,8 +46,8 @@ export const displayBottle = [
     availability: "3 colors available",
     image: [
       {
-        bottle1Image: "/assets/bottle/bottle1.webp",
-        bottle2Image: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle1.webp",
+        mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
   },

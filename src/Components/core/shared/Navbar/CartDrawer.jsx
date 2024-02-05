@@ -82,7 +82,7 @@ export const CartDrawer = () => {
               <div>
                 <img
                   className="w-16 h-24 rounded-md"
-                  src={item?.image[0]?.bottle1Image}
+                  src={item?.image[0]?.mainImage1}
                   alt=""
                 />
               </div>

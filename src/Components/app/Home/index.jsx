@@ -5,6 +5,7 @@ import IntroducingFlask from "./IntroducingFlask";
 import OnyxFlask from "./OnyxFlask";
 import WhyWeCreatedOnyx from "./WhyWeCreatedOnyx";
 import StayUpToDate from "./StayUpToDate";
+import OurService from "../../core/shared/service/OurService";
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
       <OnyxFlask />
       <WhyWeCreatedOnyx />
       <StayUpToDate />
+      <OurService/>
     </div>
   );
 };

@@ -50,8 +50,8 @@ const OnyxFlask = () => {
                   className="w-full h-full"
                   src={
                     hoveredStates[itemIndex][imageIndex]
-                      ? flask?.bottle1Image
-                      : flask?.bottle2Image
+                      ? flask?.mainImage1
+                      : flask?.mainImage2
                   }
                   alt="Product Image"
                 />

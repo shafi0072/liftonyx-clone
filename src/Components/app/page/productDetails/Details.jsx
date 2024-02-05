@@ -49,7 +49,7 @@ const Details = ({ id }) => {
         <div>
           <img
             className="md:w-[650px] md:h-[700px] w-full h-full rounded-xl"
-            src={selectedProductImage || product?.image[0]?.bottle1Image}
+            src={selectedProductImage || product?.image[0]?.mainImage1}
             alt="product"
           />
         </div>
@@ -66,10 +66,10 @@ const Details = ({ id }) => {
             tk: {calculateTotalPrice()}
           </h1>
           <div className="flex gap-5 mt-20">
-            {product?.productColor?.map((item, index) => (
-              <div key={index} onClick={() => handleProductClick(item?.color)}>
+            {product?.productColorImage?.map((item, index) => (
+              <div key={index} onClick={() => handleProductClick(item?.image)}>
                 <img
-                  src={item?.color}
+                  src={item?.image}
                   className="w-20 h-20 rounded-md cursor-pointer"
                   alt="product details"
                 />

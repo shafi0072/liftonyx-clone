@@ -1,11 +1,14 @@
 import { footerData, footerLogo } from "@/src/constant/footer";
 import { logo } from "@/src/constant/home/home";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 const index = () => {
+  const router = useRouter();
+  const name = router?.pathname;
   return (
-    <div className="bg-black px-10 py-20 mt-20">
+    <div className={`bg-black px-10 py-20 `}>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 text-white">
         <div className="">
           <img src={footerLogo} alt="logo" />
