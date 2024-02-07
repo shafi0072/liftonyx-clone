@@ -95,7 +95,7 @@ const FlaskProduct = ({product}) => {
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
                 <img
-                  className="w-full h-full"
+                  className="w-full h-full rounded-md"
                   src={
                     hoveredStates[itemIndex][imageIndex]
                       ? bottle?.mainImage2
@@ -121,11 +121,12 @@ const FlaskProduct = ({product}) => {
               </div>
             ))}
 
-            <div className="my-5">
+            <div className="my-5 text-center">
               <h2 className="text-center font-medium">{item?.title}</h2>
               <p className="text-center font-medium">{item?.money}</p>
-              <div className="flex justify-center">
+              <div className="md:flex justify-center">
                 <Rating
+                className="ms-7 md:ms-0"
                   style={{ maxWidth: 100 }}
                   value={item?.review}
                   readOnly

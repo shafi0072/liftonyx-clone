@@ -3,7 +3,7 @@ import Link from 'next/link';
 import FlaskProduct from './Product';
 import { useRouter } from 'next/router';
 import Filter from './Filter';
-import { productData } from '@/src/constant/Flask';
+import { productData } from '@/src/constant/allProductData';
 
 const Flask = () => {
   const router = useRouter();

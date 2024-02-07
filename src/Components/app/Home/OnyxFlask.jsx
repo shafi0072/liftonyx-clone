@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { displayFlask } from "@/src/constant/home/onyxFlask";
-import { productData } from "@/src/constant/Flask";
+import { productData } from "@/src/constant/allProductData";
 
 const OnyxFlask = () => {
   const [hoveredStates, setHoveredStates] = useState(
@@ -47,7 +47,7 @@ const OnyxFlask = () => {
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
                 <img
-                  className="w-full h-full"
+                  className="w-full h-full rounded-md"
                   src={
                     hoveredStates[itemIndex][imageIndex]
                       ? flask?.mainImage1
