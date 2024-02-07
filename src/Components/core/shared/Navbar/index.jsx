@@ -1,21 +1,47 @@
 import { navbarLogo } from "@/src/constant/home/home";
 import { navMenu } from "@/src/constant/home/navbar";
-import Link from "next/link";
 import { BsCart2 } from "react-icons/bs";
 import { IoMdSearch } from "react-icons/io";
 import dynamic from "next/dynamic";
+import { CartDrawer } from "./CartDrawer";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 const DynamicLink = dynamic(() => import("next/link"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
 });
 
 const index = () => {
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+  const [cartItem, setCartItem] = useState(0);
+
+  const handleButtonClick = () => {
+    setDrawerOpen(!isDrawerOpen);
+  };
+
+  useEffect(() => {
+    const cartData = localStorage.getItem("cart");
+
+    if (cartData) {
+      const parsedCartData = JSON.parse(cartData);
+      const length = Array.isArray(parsedCartData)
+        ? parsedCartData.length
+        : Object.keys(parsedCartData).length;
+      setCartItem(length);
+    } else {
+      setCartItem(0);
+    }
+  }, [cartItem]);
+
+  const router = useRouter();
+  const pathname = router?.pathname;
+
   const navLink = (
     <>
       {navMenu.map((item, index) => (
         <DynamicLink key={index} href={item.url}>
           <li>
-            <a className="uppercase">{item.title}</a>
+            <a className={`uppercase`}>{item.title}</a>
           </li>
         </DynamicLink>
       ))}
@@ -23,7 +49,7 @@ const index = () => {
   );
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white py-3">
       <div className="navbar lg:flex lg:justify-between container mx-auto px-3">
         <div className="navbar-start">
           <div className="dropdown bg-black text-white">
@@ -61,16 +87,17 @@ const index = () => {
           </div>
         </div>
 
-        <div className="relative p-3 navbar-end">
+        <div className="py-3 navbar-end">
           <div className="hidden lg:flex">
             <IoMdSearch className="text-xl mr-3"></IoMdSearch>
           </div>
-          <button>
-            <BsCart2 className="text-2xl"></BsCart2>
-            <div className="bg-white rounded-full text-[8px] text-black absolute p-1 top-2 right-0">
-              +0
+          <button className="flex" onClick={handleButtonClick}>
+            <BsCart2 className="text-2xl" />
+            <div className="text-[10px] font-bold -mt-3 bg-white rounded-full px-2 text-black">
+              {cartItem}
             </div>
           </button>
+          {isDrawerOpen && <CartDrawer />}
         </div>
       </div>
     </div>

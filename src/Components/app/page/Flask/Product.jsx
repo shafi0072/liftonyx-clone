@@ -1,17 +1,47 @@
 import React, { useState } from "react";
-import SectionTitle from "../../core/shared/SectionTitle/SectionTitle";
-import { displayBottle } from "@/src/constant/home/onyxBottle";
-import SecondaryButton from "../../core/shared/SecondaryButton/SecondaryButton";
-import { FaPlus } from "react-icons/fa6";
 import { Rating } from "@smastrom/react-rating";
+import { FaPlus } from "react-icons/fa6";
 import "@smastrom/react-rating/style.css";
-import { productData } from "@/src/constant/Flask";
+import SecondaryButton from "@/src/Components/core/shared/SecondaryButton/SecondaryButton";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
-const OnyxBottle = () => {
+const featured = [
+  {
+    title: "Featured",
+  },
+  {
+    title: "Best Selling",
+  },
+  {
+    title: "Alphabetically",
+  },
+  {
+    title: "Alphabetically, A-Z",
+  },
+  {
+    title: "Price, Low to High",
+  },
+  {
+    title: "Price, High to Low",
+  },
+  {
+    title: "Date, New to Old",
+  },
+  {
+    title: "Date, Old to New",
+  },
+];
+
+const FlaskProduct = ({product}) => {
+  
+
   const [hoveredStates, setHoveredStates] = useState(
-    Array(displayBottle.length)
+    Array(product?.length)
       .fill(0)
-      .map(() => Array(3).fill(false))
+      .map(() => Array(4).fill(false))
   );
 
   const handleMouseEnter = (itemIndex, imageIndex) => {
@@ -25,28 +55,47 @@ const OnyxBottle = () => {
     updatedStates[itemIndex][imageIndex] = false;
     setHoveredStates(updatedStates);
   };
-
   return (
-    <div className="max-w-5xl mx-auto px-3 py-14">
-      <div className="pb-10">
-        <SectionTitle
-          subTitle={"THE FIRST TRIPOD BOTTLE IN MALAYSIA"}
-          title={"ONYX Bottle"}
-        ></SectionTitle>
+    <div className="mt-5">
+      <div className="flex justify-between mb-3">
+        <div>
+          <h1>{product?.length} product</h1>
+        </div>
+        <div>
+          <PopupState variant="popover" popupId="demo-popup-menu">
+            {(popupState) => (
+              <React.Fragment>
+                <div {...bindTrigger(popupState)} className="flex items-center">
+                  <h1>
+                    Sort by{" "}
+                    <span className="font-medium cursor-pointer">Featured</span>
+                  </h1>
+                  <ArrowDropDownIcon className="cursor-pointer" />
+                </div>
+                <Menu {...bindMenu(popupState)}>
+                  {featured.map((list, index) => (
+                    <MenuItem key={index} onClick={popupState.close}>
+                      {list?.title}
+                    </MenuItem>
+                  ))}
+                </Menu>
+              </React.Fragment>
+            )}
+          </PopupState>
+        </div>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {productData?.slice(8,11).map((item, itemIndex) => (
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+        {product?.map((item, itemIndex) => (
           <div key={itemIndex}>
-            {item?.productImage?.map((bottle, imageIndex) => (
+            {item?.image?.map((bottle, imageIndex) => (
               <div
                 key={imageIndex}
-                className="relative group w-full overflow-hidden"
+                className="relative group w-full overflow-hidden rounded-md"
                 onMouseEnter={() => handleMouseEnter(itemIndex, imageIndex)}
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
                 <img
-                  className="w-full h-full rounded-md"
+                  className="w-full h-full"
                   src={
                     hoveredStates[itemIndex][imageIndex]
                       ? bottle?.mainImage2
@@ -92,4 +141,4 @@ const OnyxBottle = () => {
   );
 };
 
-export default OnyxBottle;
+export default FlaskProduct;

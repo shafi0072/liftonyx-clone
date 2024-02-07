@@ -1,7 +1,7 @@
 export const navMenu = [
   {
     title: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     title: "Bottle",
