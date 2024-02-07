@@ -5,7 +5,7 @@ const StoryBanner = () => {
   return (
     <div>
       <div className="bg-black py-10">
-        <div className="text-center text-white">
+        <div className="text-center text-white px-5 md:px-0">
           <h1 className="font-medium">[WELCOME TO THE CLUB]</h1>
           <h1 className="text-4xl font-bold mt-5">#liftonyx</h1>
           <h2 className="text-lg font-bold my-5">

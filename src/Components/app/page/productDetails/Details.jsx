@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import PrimaryButton from "@/src/Components/core/shared/PrimaryButton/PrimaryButton";
@@ -6,6 +6,7 @@ import PrimaryButton from "@/src/Components/core/shared/PrimaryButton/PrimaryBut
 const Details = ({ id }) => {
   const [count, setCount] = useState(1);
   const [selectedProductImage, setSelectedProductImage] = useState(null);
+  const [allProductData, setAllProductData] = useState([]);
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -17,9 +18,15 @@ const Details = ({ id }) => {
     }
   };
 
-  const productData = localStorage.getItem("cart");
-  const parseData = JSON.parse(productData);
-  const product = parseData && parseData?.find((data) => data?.id === id);
+  useEffect(() => {
+    const productData = localStorage.getItem("cart");
+    const parseData = JSON.parse(productData);
+    setAllProductData(parseData);
+  }, []);
+
+  const product =
+    allProductData && allProductData?.find((data) => data?.id === id);
+  console.log(product);
 
   const parseMoney = (money) => {
     return parseFloat(money.replace(/,/g, "").replace(/[^\d.-]/g, "")).toFixed(
@@ -39,12 +46,11 @@ const Details = ({ id }) => {
   };
 
   const handleProductClick = (image) => {
-    // Set the selected product's image when clicked
     setSelectedProductImage(image);
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-5 mt-20">
+    <div className="max-w-screen-xl mx-auto px-5 my-20">
       <div className="md:flex justify-between">
         <div>
           <img

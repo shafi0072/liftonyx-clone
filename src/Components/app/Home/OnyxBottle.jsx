@@ -5,7 +5,7 @@ import SecondaryButton from "../../core/shared/SecondaryButton/SecondaryButton";
 import { FaPlus } from "react-icons/fa6";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
-import { productData } from "@/src/constant/Flask";
+import { productData } from "@/src/constant/allProductData";
 
 const OnyxBottle = () => {
   const [hoveredStates, setHoveredStates] = useState(
@@ -36,9 +36,9 @@ const OnyxBottle = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {productData?.slice(8,11).map((item, itemIndex) => (
+        {productData?.slice(8,11)?.map((item, itemIndex) => (
           <div key={itemIndex}>
-            {item?.productImage?.map((bottle, imageIndex) => (
+            {item?.image?.map((bottle, imageIndex) => (
               <div
                 key={imageIndex}
                 className="relative group w-full overflow-hidden"
@@ -49,8 +49,8 @@ const OnyxBottle = () => {
                   className="w-full h-full rounded-md"
                   src={
                     hoveredStates[itemIndex][imageIndex]
-                      ? bottle?.mainImage2
-                      : bottle?.mainImage1
+                      ? bottle?.mainImage1
+                      : bottle?.mainImage2
                   }
                   alt="Product Image"
                 />
@@ -59,7 +59,7 @@ const OnyxBottle = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
-                        item={item}
+                      item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart

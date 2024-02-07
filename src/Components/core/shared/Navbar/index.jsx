@@ -6,6 +6,8 @@ import dynamic from "next/dynamic";
 import { CartDrawer } from "./CartDrawer";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import MobileNavbar from "./MobileNavbar";
+import MenuIcon from "@mui/icons-material/Menu";
 const DynamicLink = dynamic(() => import("next/link"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
@@ -14,6 +16,7 @@ const DynamicLink = dynamic(() => import("next/link"), {
 const index = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [cartItem, setCartItem] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleButtonClick = () => {
     setDrawerOpen(!isDrawerOpen);
@@ -52,29 +55,21 @@ const index = () => {
     <div className="bg-black text-white py-3">
       <div className="navbar lg:flex lg:justify-between container mx-auto px-3">
         <div className="navbar-start">
-          <div className="dropdown bg-black text-white">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
+          <div className="dropdown dropdown-end bg-black text-white">
+            <div
+              onClick={() => setIsMenuOpen(true)}
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52"
+              role="button"
+              className="btn btn-ghost lg:hidden"
             >
-              {navLink}
-            </ul>
+              <MenuIcon />
+            </div>
+            <div>
+              <MobileNavbar
+                setIsMenuOpen={setIsMenuOpen}
+                isMenuOpen={isMenuOpen}
+              />
+            </div>
           </div>
           <div className="lg:hidden">
             <IoMdSearch className="text-xl mr-3"></IoMdSearch>

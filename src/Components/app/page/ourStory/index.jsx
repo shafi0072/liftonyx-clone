@@ -26,7 +26,7 @@ const OurStory = () => {
         <h1 className="font-semibold text-center">Our Story</h1>
       </div>
       <div className="bg-black py-14">
-        <div className="w-3/6 mx-auto">
+        <div className="md:w-3/6 w-full px-5 mx-auto">
           <h1 className="text-center text-white font-bold mb-5">
             [ {onyxTitle} ]
           </h1>

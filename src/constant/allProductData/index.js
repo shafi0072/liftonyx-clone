@@ -39,7 +39,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -67,7 +67,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -95,7 +95,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -123,7 +123,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -151,7 +151,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -179,7 +179,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -207,7 +207,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -235,7 +235,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -263,7 +263,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -291,7 +291,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -319,7 +319,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -347,7 +347,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -375,7 +375,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -403,7 +403,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -431,7 +431,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -459,7 +459,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -487,7 +487,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -515,7 +515,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -543,7 +543,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -571,7 +571,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -599,7 +599,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle2.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -627,7 +627,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle6.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
@@ -655,7 +655,7 @@ export const productData = [
         mainImage2: "/assets/bottle/bottle4.webp",
       },
     ],
-    productimage: [
+    productColorImage: [
       {
         image:
           "https://cdn.shopify.com/s/files/1/0765/4060/8802/files/IMG_5263.jpg?v=1693673437",
