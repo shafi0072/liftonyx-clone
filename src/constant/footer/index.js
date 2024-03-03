@@ -79,12 +79,14 @@ export const footerData = [
     list: [
       {
         name: (
-          <div className="flex gap-5    items-center">
-            <div className="border"><FacebookIcon /></div>
-            <div className=""><InstagramIcon /></div>
-            <div className=""><TwitterIcon /></div>
-          
-          </div>
+          <div class="flex gap-5 items-center border border-transparent border-gray-500 p-4 rounded-lg cursor-pointer transition duration-300 ease-in-out">
+          <div class="flex flex-col items-center "><FacebookIcon /></div>
+          <div class="flex flex-col items-center"><InstagramIcon /></div>
+          <div class="flex flex-col items-center"><TwitterIcon /></div>
+      </div>
+      
+      
+      
         
         ),
         link:""

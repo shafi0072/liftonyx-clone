@@ -6,13 +6,16 @@ import OnyxFlask from "./OnyxFlask";
 import WhyWeCreatedOnyx from "./WhyWeCreatedOnyx";
 import StayUpToDate from "./StayUpToDate";
 import OurService from "../../core/shared/service/OurService";
- import Lottie from "lottie-react";
+import AnimationIcon from "./AnimationIcon";
+
+//  import Lottie from "lottie-react";
 // import Animation from "../../../../public/assets/animation/Animation .json";
 
 const index = () => {
   return (
     <div>
       <Banner />
+      
       <OnyxBottle />
       <IntroducingFlask />
       <OnyxFlask />
@@ -20,6 +23,8 @@ const index = () => {
       <StayUpToDate />
       <OurService/>
       {/* <Lottie animationData={Animation}></Lottie> */}
+     <AnimationIcon></AnimationIcon>
+      
     </div>
   );
 };

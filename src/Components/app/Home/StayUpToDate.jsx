@@ -23,8 +23,19 @@ const StayUpToDate = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-10">
-        <div className="lg:w-[55%]">
-          <img className="w-full h-full rounded-xl" src={stayUpToDateImage1} alt="" />
+        <div style={{ position: 'relative', display: 'inline-block' }} className="lg:w-[45%]">
+          
+        {/* <div style={{ position: 'relative', display: 'inline-block' }}> */}
+      <img  className="w-full h-full rounded-xl" src={stayUpToDateImage1} alt="" />
+      <button
+        className={`btn absolute right-5 bottom-5 ${isVisible ? '' : 'opacity-0'}`}
+        onMouseEnter={() => setIsVisible(true)}
+        onMouseLeave={() => setIsVisible(false)}
+      >
+        <IoArrowForward />
+      </button>
+    {/* </div> */}
+         
           <h2 className="text-4xl mt-8 font-semibold mx-1">
             {stayUpToDateImage1Description}
           </h2>
@@ -35,10 +46,7 @@ const StayUpToDate = () => {
             <div key={index} className="flex flex-col md:flex-row gap-5 mb-10">
               <div className="flex-1 relative">
                 <img className="rounded-xl" src={item?.stayUpToDateImage} alt="" />
-{/*                 
-                <button className="btn absolute right-5 bottom-5 hidden group-hover:btn">
-  <IoArrowForward />
-</button> */}
+
 
 <button
       className={`btn absolute right-5 bottom-5 ${isVisible ? '' : 'opacity-0 '}`}

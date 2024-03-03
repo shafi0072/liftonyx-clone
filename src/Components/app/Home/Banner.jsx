@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className=" relative">
       <div className="pt-[122px]">
-        <img className="md::w-full md:mx-auto " src={bannerImage} alt="Banner Image" />
+        <img className="md:w-full md:mx-auto " src={bannerImage} alt="Banner Image" />
       </div>
       <div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
