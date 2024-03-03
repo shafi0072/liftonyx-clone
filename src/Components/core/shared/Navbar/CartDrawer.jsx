@@ -6,6 +6,7 @@ import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import Link from "next/link";
 import Swal from "sweetalert2";
+import { RiShoppingCartLine } from "react-icons/ri";
 
 export const CartDrawer = () => {
   const [cartItem, setCartItem] = useState([]);
@@ -74,8 +75,20 @@ export const CartDrawer = () => {
       className="overflow-y-auto"
     >
       <List>
-        <h1 className="text-2xl font-bold ms-5 mt-2 md:hidden">x</h1>
-        <h1 className="text-2xl font-bold text-center mb-5">Your Cart Item</h1>
+        {/* <h1 className="text-2xl font-bold ms-5 mt-2 md:hidden">x</h1>
+        <h1 className="text-2xl font-bold text-center mb-5">Your Cart Item</h1> */}
+        <div className="flex justify-between p-5">
+       
+       <div className="flex gap-3 text-2xl"> <RiShoppingCartLine />
+        <h1 className="text-xl font-semibold  text-center mb-5" > Cart</h1>
+        </div>
+       
+         <h1 className="text-2xl  ms-5 mt-2 ">x</h1>
+        
+        </div>
+        
+        {/* <hr /> */}
+        {/* <h6 className="text-sm justify-center text-center items-center">You are eligible for free shipping for WM or 50% OFF Shipping for EM!</h6> */}
         {cartItem?.map((item, index) => (
           <ListItem key={index}>
             <div className="flex items-center gap-5 mb-5">
@@ -86,7 +99,19 @@ export const CartDrawer = () => {
                   alt=""
                 />
               </div>
-              <h1 className="text-lg font-bold">{item?.title}</h1>
+             <div className="flex gap-8"> 
+              <div>
+              <h1 className="text-sm text-black">{item?.title}</h1>
+              <h4 className="text-gray-500">ONYX Black</h4>
+              </div>
+              
+             <div>
+             <h4>Tk 3,810.47</h4>
+             <h4 className="line-through text-black font-medium">Tk 4,157.30</h4> 
+             </div>
+              {/* <h4 className="line-through">Tk 4,157.30</h4> */}
+              </div>
+              
               <div className="gap-2  flex flex-col">
                 <Link href={`/productDetails/${item?.id}`}>
                   <button className="text-white bg-black rounded-md px-4 py-2">
@@ -99,7 +124,7 @@ export const CartDrawer = () => {
                 >
                   Delete
                 </button>
-              </div>
+              </div> 
             </div>
           </ListItem>
         ))}

@@ -79,11 +79,13 @@ export const footerData = [
     list: [
       {
         name: (
-          <div className="flex gap-5 items-center">
-            <div><FacebookIcon /></div>
-            <div><InstagramIcon /></div>
-            <div><TwitterIcon /></div>
+          <div className="flex gap-5    items-center">
+            <div className="border"><FacebookIcon /></div>
+            <div className=""><InstagramIcon /></div>
+            <div className=""><TwitterIcon /></div>
+          
           </div>
+        
         ),
         link:""
       },

@@ -6,6 +6,8 @@ import OnyxFlask from "./OnyxFlask";
 import WhyWeCreatedOnyx from "./WhyWeCreatedOnyx";
 import StayUpToDate from "./StayUpToDate";
 import OurService from "../../core/shared/service/OurService";
+ import Lottie from "lottie-react";
+// import Animation from "../../../../public/assets/animation/Animation .json";
 
 const index = () => {
   return (
@@ -17,6 +19,7 @@ const index = () => {
       <WhyWeCreatedOnyx />
       <StayUpToDate />
       <OurService/>
+      {/* <Lottie animationData={Animation}></Lottie> */}
     </div>
   );
 };
