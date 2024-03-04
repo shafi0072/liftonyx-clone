@@ -7,8 +7,8 @@ export const displayBottle = [
     availability: "3 colors available",
     image: [
       {
-        mainImage1: "/assets/bottle/bottle1.webp",
-        mainImage2: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle2.webp",
+        mainImage2: "/assets/bottle/bottle1.webp",
       },
     ],
   },

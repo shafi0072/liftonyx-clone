@@ -75,7 +75,10 @@ const OnyxFlask = () => {
 
             <div className="my-5">
               <h2 className="text-center font-medium">{item?.title}</h2>
+              <div className="flex justify-center gap-4">
               <p className="text-center font-medium">{item?.money}</p>
+              <p className="text-center font-semibold line-through">{item?.money}</p>
+              </div>
               <div className="flex justify-center">
                 <Rating
                   style={{ maxWidth: 100 }}

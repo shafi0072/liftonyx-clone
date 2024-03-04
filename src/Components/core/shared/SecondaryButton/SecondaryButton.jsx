@@ -38,6 +38,8 @@ const SecondaryButton = ({ title, item, type }) => {
       >
         {title}
       </button>
+   
+
     </div>
   );
 };

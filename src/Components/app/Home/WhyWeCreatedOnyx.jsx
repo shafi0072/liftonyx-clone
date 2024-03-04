@@ -18,7 +18,7 @@ const WhyWeCreatedOnyx = () => {
         />
       </div>
 
-      <div className="bg-black text-white container lg:ml-[38%] p-4 lg:p-20 lg:px-36">
+      <div className="bg-black text-white container lg:ml-[32%] p-4 lg:p-20 lg:px-36">
         <div className="w-full lg:max-w-lg">
           <h3 className="text-sm font-medium text-center my-3">
             {whyWeCreatedOnyxSubTitle}

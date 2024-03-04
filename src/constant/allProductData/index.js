@@ -1,14 +1,14 @@
 export const productData = [
   {
     id: "0",
-    title: "ONYS Flax - 100 ML",
-    money: "3,021.46",
+    title: "ONYS Flax - 600 ML",
+    money: "Tk 2,983.37",
     review: "3",
-    availability: "3 images available",
+    availability: "3 color available",
     image: [
       {
-        mainImage1: "/assets/bottle/bottle1.webp",
-        mainImage2: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/flask/flask2.webp",
+        mainImage2: "/assets/flask/flask1.webp",
       },
     ],
     productColorImage: [
@@ -29,14 +29,14 @@ export const productData = [
   },
   {
     id: "1",
-    title: "ONYS Flax - 200 ML",
-    money: "3,021.46",
+    title: "ONYS Flax - 600 ML",
+    money: "Tk 2,983.37",
     review: "4",
-    availability: "3 images available",
+    availability: "3 color available",
     image: [
       {
-        mainImage1: "/assets/bottle/bottle3.webp",
-        mainImage2: "/assets/bottle/bottle4.webp",
+        mainImage1: "/assets/flask/flask4.webp",
+        mainImage2: "/assets/flask/flask4.webp",
       },
     ],
     productColorImage: [
@@ -57,14 +57,14 @@ export const productData = [
   },
   {
     id: "2",
-    title: "ONYS Flax - 300 ML",
-    money: "3,021.46",
+    title: "ONYS Flax - 600 ML",
+    money: "Tk 2,983.37",
     review: "5",
-    availability: "3 images available",
+    availability: "3 color available",
     image: [
       {
-        mainImage1: "/assets/bottle/bottle5.webp",
-        mainImage2: "/assets/bottle/bottle6.webp",
+        mainImage1: "/assets/flask/flask6.webp",
+        mainImage2: "/assets/flask/flask4.webp",
       },
     ],
     productColorImage: [
@@ -85,7 +85,7 @@ export const productData = [
   },
   {
     id: "3",
-    title: "ONYS Flax - 400 ML",
+    title: "ONYS Flax - 600 ML",
     money: "3,021.46",
     review: "3",
     availability: "3 images available",
@@ -119,8 +119,8 @@ export const productData = [
     availability: "3 images available",
     image: [
       {
-        mainImage1: "/assets/bottle/bottle1.webp",
-        mainImage2: "/assets/bottle/bottle2.webp",
+        mainImage1: "/assets/bottle/bottle2.webp",
+        mainImage2: "/assets/bottle/bottle1.webp",
       },
     ],
     productColorImage: [
@@ -225,10 +225,10 @@ export const productData = [
   },
   {
     id: "8",
-    title: "ONYS Bottle - 100 ML",
+    title: "ONYS Bottle - 2.7 ML",
     money: "3,021.46",
     review: "3",
-    availability: "3 images available",
+    availability: "3 color available",
     image: [
       {
         mainImage1: "/assets/bottle/bottle1.webp",
@@ -253,10 +253,10 @@ export const productData = [
   },
   {
     id: "9",
-    title: "ONYS Bottle - 200 ML",
+    title: "ONYS Bottle - 2.7 ML",
     money: "3,021.46",
     review: "4",
-    availability: "3 images available",
+    availability: "3 color available",
     image: [
       {
         mainImage1: "/assets/bottle/bottle3.webp",
@@ -281,10 +281,10 @@ export const productData = [
   },
   {
     id: "10",
-    title: "ONYS Bottle - 300 ML",
+    title: "ONYS Bottle - 2.7 ML",
     money: "3,021.46",
     review: "5",
-    availability: "3 images available",
+    availability: "3 color available",
     image: [
       {
         mainImage1: "/assets/bottle/bottle5.webp",

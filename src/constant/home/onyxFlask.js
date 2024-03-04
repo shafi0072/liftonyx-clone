@@ -23,7 +23,7 @@ export const displayFlask = [
     availability: "3 colors available",
     image: [
       {
-        flask1Image: "/assets/flask/flask1.webp",
+        flask1Image: "/assets/flask/flask2.webp",
         flask2Image: "/assets/flask/flask4.webp",
       },
     ],
