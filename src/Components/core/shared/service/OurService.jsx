@@ -7,11 +7,19 @@ const OurService = () => {
   const name = router?.pathname;
 
   return (
-    <div className={`py-20 bg-gray-100 ${name === "/" ? "mt-14" : ""}`}>
-      <div className="max-w-screen-xl mx-auto flex justify-evenly">
+    <div
+      className={` py-5 lg:py-20 bg-gray-100 ${
+        name === "/" ? "mt-3 lg:mt-14" : ""
+      }`}
+    >
+      <div className=" overflow-x-auto lg:overflow-x-hidden  flex gap-3 max-w-2xl lg:max-w-full">
         {serviceData?.map((image, index) => (
-          <div key={index}>
-            <img className="h-32" src={image?.image} alt="service image" />
+          <div className="" key={index}>
+            <img
+              className=" min-w-[23vw] max-w-[20vw] lg:min-w-[7vw]  w-full ml-3"
+              src={image?.image}
+              alt="service image"
+            />
           </div>
         ))}
       </div>

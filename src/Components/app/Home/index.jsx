@@ -13,7 +13,7 @@ import AnimationIcon from "./AnimationIcon";
 
 const index = () => {
   return (
-    <div>
+    <div className="w-full mx-auto">
       <Banner />
       
       <OnyxBottle />

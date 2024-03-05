@@ -9,7 +9,7 @@ const IntroducingFlask = () => {
     <div className=" relative">
       <div>
         <img
-          className="w-full"
+          className="aspect-[.7] lg:aspect-auto w-full h-full"
           src={introducingFlaskImage}
           alt="Banner Image"
         />

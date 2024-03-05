@@ -56,7 +56,7 @@ const index = () => {
   );
 
   return (
-    <div className="bg-black fixed z-10 w-full text-white py-3">
+    <div className="bg-black fixed top-0 z-10 w-full text-white py-3">
       <div className="bg-gray-900 pt-4 pb-3 -mt-4 ">
 
    <NavAd></NavAd>
@@ -93,8 +93,8 @@ const index = () => {
         </div>
 
         <div className="py-3 navbar-end">
-          <div className="hidden lg:flex">
-            <IoMdSearch className="text-xl mr-3"></IoMdSearch>
+          <div className="hidden  lg:flex">
+            <IoMdSearch className="text-2xl  mr-3"></IoMdSearch>
           </div>
           <button className="flex" onClick={handleButtonClick}>
             <BsCart2 className="text-2xl" />

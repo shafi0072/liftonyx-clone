@@ -4,7 +4,7 @@ const PrimaryButton = ({ title, onClick, type }) => {
       <button
         type={type}
         onClick={() => onClick()}
-        className="btn bg-black text-white border border-black px-14 hover:bg-black hover:border-none"
+        className="btn bg-black text-white border border-black px-4 lg:px-14 hover:bg-black hover:border-none"
       >
         {title}
       </button>

@@ -55,8 +55,8 @@ const FlaskProduct = ({ product }) => {
     setHoveredStates(updatedStates);
   };
   return (
-    <div className="mt-5">
-      <div className="flex justify-between mb-5">
+    <div className="mt-5 ">
+      <div className="flex justify-between mb-3">
         <div>
           <h1>{product?.length} product</h1>
         </div>
