@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import PrimaryButton from "@/src/Components/core/shared/PrimaryButton/PrimaryButton";
+import whatsApp from "../../../../../public/wp.json";
+import Lottie from "lottie-react";
 
 const Details = ({ id }) => {
   const [count, setCount] = useState(1);
@@ -50,7 +52,7 @@ const Details = ({ id }) => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto px-5 my-20">
+    <div className="max-w-screen-xl mx-auto mt-28 px-5 my-20">
       <div className="md:flex justify-between">
         <div>
           <img
@@ -59,19 +61,22 @@ const Details = ({ id }) => {
             alt="product"
           />
         </div>
-        <div className="mt-10 md:mt-0">
-          <h1 className="text-4xl font-bold">{product?.title}</h1>
-          <div className="mt-5">
+
+        <div className="lg:mt-10 flex flex-col mt-0">
+          <h1 className=" text-2xl lg:text-4xl order-2 lg:order-1 font-bold">
+            {product?.title}
+          </h1>
+          <div className="my-2 lg:mt-5 order-3  lg:order-2">
             <Rating
               style={{ maxWidth: 100 }}
               value={product?.review}
               readOnly
             />
           </div>
-          <h1 className="text-3xl font-semibold text-red-500 mt-5">
+          <h1 className=" text-xl lg:text-3xl order-4  lg:order-3 font-semibold text-red-500 my-2 lg:mt-5">
             tk: {calculateTotalPrice()}
           </h1>
-          <div className="flex gap-5 mt-20">
+          <div className="flex order-1  lg:order-4  gap-5 mt-5 lg:mt-20">
             {product?.productColorImage?.map((item, index) => (
               <div key={index} onClick={() => handleProductClick(item?.image)}>
                 <img
@@ -82,7 +87,7 @@ const Details = ({ id }) => {
               </div>
             ))}
           </div>
-          <div className="mt-10">
+          <div className= " my-2 lg:mt-10 order-5 lg:order-5">
             <h1>Quantity:</h1>
             <div className="border-2 cursor-pointer mt-2 py-2 text-lg font-bold flex justify-between px-5 w-40">
               <div onClick={handleDecrement}>-</div>
@@ -90,10 +95,16 @@ const Details = ({ id }) => {
               <div onClick={handleIncrement}>+</div>
             </div>
           </div>
-          <div className="mt-5">
+          <div className=" my-2 lg:mt-5 order-6">
             <PrimaryButton title={"CheckOut"} />
           </div>
         </div>
+
+        <section className="bg-[#EEF1F5] my-6 md:my-8">
+          <div className="mx-auto">
+            <h1 className="text-center text-[44px] font-semibold text-[#282828]">WHY ONYX BOTTLE?</h1>
+          </div>
+        </section>
       </div>
     </div>
   );

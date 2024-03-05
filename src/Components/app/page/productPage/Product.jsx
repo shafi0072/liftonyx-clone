@@ -7,6 +7,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const featured = [
   {
@@ -35,9 +36,7 @@ const featured = [
   },
 ];
 
-const FlaskProduct = ({product}) => {
-  
-
+const FlaskProduct = ({ product }) => {
   const [hoveredStates, setHoveredStates] = useState(
     Array(product?.length)
       .fill(0)
@@ -56,7 +55,7 @@ const FlaskProduct = ({product}) => {
     setHoveredStates(updatedStates);
   };
   return (
-    <div className="mt-5">
+    <div className="mt-5 ">
       <div className="flex justify-between mb-3">
         <div>
           <h1>{product?.length} product</h1>
@@ -66,11 +65,11 @@ const FlaskProduct = ({product}) => {
             {(popupState) => (
               <React.Fragment>
                 <div {...bindTrigger(popupState)} className="flex items-center">
-                  <h1>
+                  <h1 className="text-slate-600 text-[14px]">
                     Sort by{" "}
                     <span className="font-medium cursor-pointer">Featured</span>
                   </h1>
-                  <ArrowDropDownIcon className="cursor-pointer" />
+                  <KeyboardArrowDownIcon className="cursor-pointer text-[19px]" />
                 </div>
                 <Menu {...bindMenu(popupState)}>
                   {featured.map((list, index) => (
@@ -84,7 +83,7 @@ const FlaskProduct = ({product}) => {
           </PopupState>
         </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-8">
         {product?.map((item, itemIndex) => (
           <div key={itemIndex}>
             {item?.image?.map((bottle, imageIndex) => (
@@ -106,12 +105,15 @@ const FlaskProduct = ({product}) => {
 
                 <div>
                   {hoveredStates[itemIndex][imageIndex] && (
-                    <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
+                    <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px] ">
                       <SecondaryButton
                         item={item}
                         title={
                           <>
-                            <FaPlus /> Add to Cart
+                            <FaPlus className="text-[12px] text-slate-600" />{" "}
+                            <span className="text-slate-600 text-[13px] font-normal">
+                              Add to Cart
+                            </span>
                           </>
                         }
                       ></SecondaryButton>
@@ -121,19 +123,25 @@ const FlaskProduct = ({product}) => {
               </div>
             ))}
 
-            <div className="my-5 text-center">
-              <h2 className="text-center font-medium">{item?.title}</h2>
-              <p className="text-center font-medium">{item?.money}</p>
-              <div className="md:flex justify-center">
+            <div className="my-5 mt-5 text-center space-y-1">
+              <h2 className="text-center font-normal text-slate-700">
+                {item?.title}
+              </h2>
+              <p className="text-center font-normal text-slate-600">
+                Tk {item?.money}
+              </p>
+              <div className="md:flex text-sm justify-center">
                 <Rating
-                className="ms-7 md:ms-0"
+                  className="ms-7  md:ms-0"
                   style={{ maxWidth: 100 }}
                   value={item?.review}
                   readOnly
                 />{" "}
-                <span className="ml-3 font-medium">{item?.review} reviews</span>
+                <span className="ml-3 font-medium text-slate-600">
+                  {item?.review} reviews
+                </span>
               </div>
-              <p className="text-center font-medium">{item?.availability}</p>
+              {/* <p className="text-center font-medium">{item?.availability}</p> */}
             </div>
           </div>
         ))}

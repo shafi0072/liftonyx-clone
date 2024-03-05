@@ -36,9 +36,12 @@ const OnyxFlask = () => {
         ></SectionTitle>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {productData?.slice(0,3)?.map((item, itemIndex) => (
-          <div key={itemIndex}>
+      <div className="overflow-x-auto  flex gap-3 max-w-2xl lg:max-w-full">
+        {productData?.slice(0, 3)?.map((item, itemIndex) => (
+          <div
+            className="min-w-[60vw] lg:min-w-[30%]  w-full ml-3"
+            key={itemIndex}
+          >
             {item?.image?.map((flask, imageIndex) => (
               <div
                 key={imageIndex}
@@ -47,11 +50,11 @@ const OnyxFlask = () => {
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
                 <img
-                  className="w-full h-full rounded-md"
+                  className="w-full h-full duration-500 rounded-md"
                   src={
                     hoveredStates[itemIndex][imageIndex]
-                      ? flask?.mainImage1
-                      : flask?.mainImage2
+                      ? flask?.mainImage2
+                      : flask?.mainImage1
                   }
                   alt="Product Image"
                 />
@@ -60,7 +63,7 @@ const OnyxFlask = () => {
                   {hoveredStates[itemIndex][imageIndex] && (
                     <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]">
                       <SecondaryButton
-                      item={item}
+                        item={item}
                         title={
                           <>
                             <FaPlus /> Add to Cart
