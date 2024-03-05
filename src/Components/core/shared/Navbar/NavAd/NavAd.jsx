@@ -12,21 +12,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const NavAd = () => {
     return (
-        <div className='max-w-xl mx-auto  '>
+        <div className='max-w-xl mx-auto text-white '>
+          
             <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                pagination={ false
-                //     {
-                //     clickable: true,
-                // }
-            }
-                navigation={false}
-                modules={[Autoplay, Pagination, Navigation]}
+                rewind={true}
+                navigation={true}
+                modules={[Navigation]}
                 className="mySwiper text-center text-sm text-white"
             >
                 <SwiperSlide>10% OFF for First Time Purchase</SwiperSlide>
@@ -34,7 +25,6 @@ const NavAd = () => {
                 <SwiperSlide>Buy 1 Get 30% OFF Shipping for WM</SwiperSlide>
 
                 <SwiperSlide>Buy 1 Get 50% OFF Shipping for WM</SwiperSlide>
-
             </Swiper>
         </div>
     );
