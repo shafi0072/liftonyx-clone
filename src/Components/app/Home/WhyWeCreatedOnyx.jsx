@@ -30,7 +30,7 @@ const WhyWeCreatedOnyx = () => {
             {whyWeCreatedOnyxDescription}
           </p>
 
-          <div className="my-6 lg:my-10 flex justify-center">
+          <div className="my-6  lg:my-10 flex justify-center">
             <SecondaryButton
               title={whyWeCreatedOnyxButtonText}
             ></SecondaryButton>

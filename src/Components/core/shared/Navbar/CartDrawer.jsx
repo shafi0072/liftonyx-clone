@@ -73,7 +73,7 @@ export const CartDrawer = () => {
       onKeyDown={toggleDrawer(anchor, false)}
       className="overflow-y-auto"
     >
-      <List>
+      <List className="">
         <h1 className="text-2xl font-bold ms-5 mt-2 md:hidden">x</h1>
         <h1 className="text-2xl font-bold text-center mb-5">Your Cart Item</h1>
         {cartItem?.map((item, index) => (

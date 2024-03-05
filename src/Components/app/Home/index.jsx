@@ -9,7 +9,7 @@ import OurService from "../../core/shared/service/OurService";
 
 const index = () => {
   return (
-    <div>
+    <div className="w-full mx-auto">
       <Banner />
       <OnyxBottle />
       <IntroducingFlask />

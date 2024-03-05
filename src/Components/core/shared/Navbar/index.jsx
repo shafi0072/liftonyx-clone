@@ -52,7 +52,7 @@ const index = () => {
   );
 
   return (
-    <div className="bg-black text-white py-3">
+    <div className="bg-black top-0 fixed w-full z-50 text-white py-3">
       <div className="navbar lg:flex lg:justify-between container mx-auto px-3">
         <div className="navbar-start">
           <div className="dropdown dropdown-end bg-black text-white">
@@ -83,8 +83,8 @@ const index = () => {
         </div>
 
         <div className="py-3 navbar-end">
-          <div className="hidden lg:flex">
-            <IoMdSearch className="text-xl mr-3"></IoMdSearch>
+          <div className="hidden  lg:flex">
+            <IoMdSearch className="text-2xl  mr-3"></IoMdSearch>
           </div>
           <button className="flex" onClick={handleButtonClick}>
             <BsCart2 className="text-2xl" />
