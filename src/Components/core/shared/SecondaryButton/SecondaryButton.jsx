@@ -30,14 +30,21 @@ const SecondaryButton = ({ title, item, type }) => {
   };
 
   return (
-    <div>
-      <button
+    <div className="w-full px-2 ">
+      {/* <button
         type={type}
         onClick={handleAddToCart}
-        className="btn bg-white text-black border border-white hover:border-none transition-all transform hover:-translate-y-1 hover:bg-gray-100"
+        className="btn  bg-white text-black border border-white hover:border-none transition-all transform hover:-translate-y-1 hover:bg-gray-100"
       >
         {title}
-      </button>
+      </button> */}
+       <button
+      type={type}
+      onClick={handleAddToCart}
+      className="btn w-full bg-white text-black border border-white hover:border-none  hover:bg-gray-100"
+    >
+      {title}
+    </button>
    
 
     </div>
