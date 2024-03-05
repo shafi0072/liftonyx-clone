@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import PrimaryButton from "@/src/Components/core/shared/PrimaryButton/PrimaryButton";
+import whatsApp from "../../../../../public/wp.json";
+import Lottie from "lottie-react";
 
 const Details = ({ id }) => {
   const [count, setCount] = useState(1);
@@ -97,6 +99,12 @@ const Details = ({ id }) => {
             <PrimaryButton title={"CheckOut"} />
           </div>
         </div>
+
+        <section className="bg-[#EEF1F5] my-6 md:my-8">
+          <div className="mx-auto">
+            <h1 className="text-center text-[44px] font-semibold text-[#282828]">WHY ONYX BOTTLE?</h1>
+          </div>
+        </section>
       </div>
     </div>
   );

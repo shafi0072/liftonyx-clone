@@ -1,5 +1,5 @@
-import Flask from '@/src/Components/app/page/productPage';
-import React from 'react';
+import Flask from "@/src/Components/app/page/productPage";
+import React from "react";
 
 const index = () => {
     return (

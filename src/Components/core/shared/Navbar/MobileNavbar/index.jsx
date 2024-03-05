@@ -12,41 +12,36 @@ const MobileNavbar = ({ setIsMenuOpen, isMenuOpen }) => {
     setIsMenuOpen(false);
   };
 
-  console.log(isMenuOpen);
-
   return (
-    <Headroom>
-      <div className="w-full transition peer">
-        <div
-          className={`fixed h-screen  w-full peer-focus:left-0 peer:transition bg-black/30  ease-out delay-150 lg:hidden top-0 right-0 -translate-x-full duration-500 ${
-            isMenuOpen ? "translate-x-0   " : " -translate-x-full hidden"
-          }`}
-        >
-          <section className=" z-50 bg-white text-black w-[400px] flex flex-col  absolute left-0 top-0 h-screen  gap-8  overflow-y-auto">
-            <div onClick={() => setIsMenuOpen(false)}>
-              <CloseIcon
-                className="cursor-pointer pl-7"
-                sx={{ fontSize: "50px" }}
-              />
+    <div className={`fixed inset-0 bg-black/30 lg:hidden z-50 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      <div className={`fixed inset-y-0 left-0 w-64 bg-white overflow-y-auto transform transition-transform duration-300 ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="flex items-center justify-between p-4">
+          <div className="cursor-pointer" onClick={() => setIsMenuOpen(false)}>
+            <CloseIcon className="text-gray-700" />
+          </div>
+        </div>
+        <div className="">
+          {navMenu.map((item, index) => (
+            <div key={index} className="mx-4 border-b py-2">
+              <Link href={item.url}>
+                <p onClick={() => setIsMenuOpen(false)} className="text-gray-700 text-2xl font-semibold">{item.title}</p>
+              </Link>
             </div>
-            <div className="text-left"> 
-              {navMenu.map((item, index) => (
-                <div className="px-4 pl-6" key={index}>
-                  <p
-                    onClick={() => handleRouter(item?.url)}
-                    className="py-4 pl-4 pb-5 text-lg font-semibold text-black "
-                  >
-                    {item?.title}
-                  </p>
-                  <hr className="ml-4" />
-                </div>
-              ))}
-            </div>
-          </section>
+          ))}
         </div>
       </div>
-    </Headroom>
+    </div>
   );
 };
 
 export default MobileNavbar;
+
+
+
+// {navMenu.map((item, index) => (
+//   <div key={index}>
+//     <Link href={item?.url} className="py-4 px-4 text-lg font-semibold text-white border-b border-white">
+//       {item?.title}
+//     </Link>
+//   </div>
+// ))}

@@ -72,9 +72,24 @@ const OnyxBottle = () => {
               </div>
             ))}
 
-            <div className="my-5">
+            <div className="my-5 ">
               <h2 className="text-center font-medium">{item?.title}</h2>
-              <p className="text-center font-medium">{item?.money}</p>
+            <div className="flex justify-center gap-4 w[70%] mx-auto">
+            <p className="text-center font-medium">TK {item?.money}</p>
+              <p className="text-center font-semibold line-through">TK {item?.money}</p>
+            </div>
+              {/* <p className="text-center font-medium">{parseInt(item?.money * 0.1)}</p> */}
+              {/* <p className="text-center font-medium">{parseInt(Number(item?.money) * 0.1)}</p> */}
+              {/* <div>
+  {item && (
+    <p className="text-center font-medium">
+      {parseInt(item.money) }-{parseFloat(item.money) * 0.1}
+    </p>
+  )}
+</div> */}
+
+
+
               <div className="flex justify-center">
                 <Rating
                   style={{ maxWidth: 100 }}

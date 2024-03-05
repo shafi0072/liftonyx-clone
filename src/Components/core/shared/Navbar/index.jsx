@@ -8,6 +8,10 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import MobileNavbar from "./MobileNavbar";
 import MenuIcon from "@mui/icons-material/Menu";
+import NavAd from "./NavAd/NavAd";
+// import NavAd from "./NavAd/NavAd";
+
+
 const DynamicLink = dynamic(() => import("next/link"), {
   ssr: false,
   loading: () => <p>Loading...</p>,
@@ -52,8 +56,14 @@ const index = () => {
   );
 
   return (
-    <div className="bg-black top-0 fixed w-full z-50 text-white py-3">
-      <div className="navbar lg:flex lg:justify-between container mx-auto px-3">
+    <div className="bg-black fixed top-0 z-10 w-full text-white py-3">
+      <div className="bg-gray-900 pt-4 pb-3 -mt-4 ">
+
+   <NavAd></NavAd>
+   
+
+      </div>
+      <div className="navbar  lg:flex lg:justify-between container mx-auto px-3">
         <div className="navbar-start">
           <div className="dropdown dropdown-end bg-black text-white">
             <div

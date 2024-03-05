@@ -6,7 +6,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Filter = ({product}) => {
+const Filter = ({ product }) => {
   const [availability, setAvailability] = React.useState({
     inStock: false,
     outOfStock: false,
@@ -39,16 +39,27 @@ const Filter = ({product}) => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
             id="panel1-header"
+            className="font-semibold text-[15px] text-slate-700 "
           >
             Availability
           </AccordionSummary>
           <AccordionDetails>
             <div className="flex items-center">
-              <Checkbox {...label} name="inStock" checked={availability.inStock} onChange={handleCheckboxChange} />
+              <Checkbox
+                {...label}
+                name="inStock"
+                checked={availability.inStock}
+                onChange={handleCheckboxChange}
+              />
               <h1>In stock ({product?.length})</h1>
             </div>
             <div className="flex items-center">
-              <Checkbox {...label} name="outOfStock" checked={availability.outOfStock} onChange={handleCheckboxChange} />
+              <Checkbox
+                {...label}
+                name="outOfStock"
+                checked={availability.outOfStock}
+                onChange={handleCheckboxChange}
+              />
               <h1>Out of stock (0)</h1>
             </div>
           </AccordionDetails>
@@ -61,6 +72,7 @@ const Filter = ({product}) => {
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
             id="panel1-header"
+            className="font-semibold text-[15px] text-slate-700"
           >
             Price
           </AccordionSummary>
@@ -75,7 +87,9 @@ const Filter = ({product}) => {
                 <p>RM</p>
                 <input
                   value={priceRange[0]}
-                  onChange={(e) => setPriceRange([+e.target.value, priceRange[1]])}
+                  onChange={(e) =>
+                    setPriceRange([+e.target.value, priceRange[1]])
+                  }
                   className="w-12"
                   type="number"
                 />
@@ -85,7 +99,9 @@ const Filter = ({product}) => {
                 <p>RM</p>
                 <input
                   value={priceRange[1]}
-                  onChange={(e) => setPriceRange([priceRange[0], +e.target.value])}
+                  onChange={(e) =>
+                    setPriceRange([priceRange[0], +e.target.value])
+                  }
                   className="w-12"
                   type="number"
                 />
