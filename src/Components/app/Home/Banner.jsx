@@ -7,7 +7,7 @@ const Banner = () => {
     <div className=" relative h-full  mx-auto w-full mt-28 lg:mt-28">
       <div className="w-full h-full">
         <img
-          className="w-full aspect-square lg:aspect-auto  h-auto  lg:h-full "
+          className="w-full aspect-square  lg:aspect-auto h-full "
           src={bannerImage}
           alt="Banner Image"
         />
