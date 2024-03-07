@@ -294,8 +294,8 @@ export const CartDrawer = () => {
                     </div>
                   </div>
 
-                  {/* <div className="gap-2  flex flex-col">
-                  <Link href={/productDetails/${item?.id}}>
+                  <div className="gap-2  flex flex-col">
+                  <Link href={`/productDetails/${item?.id}`}>
                     <button className="text-white bg-black rounded-md px-4 py-2">
                       Details
                     </button>
@@ -306,7 +306,7 @@ export const CartDrawer = () => {
                   >
                     Delete
                   </button>
-                </div> */}
+                </div>
                 </div>
               </ListItem>
               <div className="my-20">

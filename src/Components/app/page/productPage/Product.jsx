@@ -8,6 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Link from "next/link";
 
 const featured = [
   {
@@ -93,33 +94,35 @@ const FlaskProduct = ({ product }) => {
                 onMouseEnter={() => handleMouseEnter(itemIndex, imageIndex)}
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
-                <img
-                  className="w-full h-full rounded-md"
-                  src={
-                    hoveredStates[itemIndex][imageIndex]
-                      ? bottle?.mainImage2
-                      : bottle?.mainImage1
-                  }
-                  alt="Product Image"
-                />
+                <Link href={`/productDetails/${item?.id}`}>
+                  <img
+                    className="w-full h-full rounded-md"
+                    src={
+                      hoveredStates[itemIndex][imageIndex]
+                        ? bottle?.mainImage2
+                        : bottle?.mainImage1
+                    }
+                    alt="Product Image"
+                  />
 
-                <div>
-                  {hoveredStates[itemIndex][imageIndex] && (
-                    <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px] ">
-                      <SecondaryButton
-                        item={item}
-                        title={
-                          <>
-                            <FaPlus className="text-[12px] text-slate-600" />{" "}
-                            <span className="text-slate-600 text-[13px] font-normal">
-                              Add to Cart
-                            </span>
-                          </>
-                        }
-                      ></SecondaryButton>
-                    </div>
-                  )}
-                </div>
+                  <div>
+                    {hoveredStates[itemIndex][imageIndex] && (
+                      <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px] ">
+                        <SecondaryButton
+                          item={item}
+                          title={
+                            <>
+                              <FaPlus className="text-[12px] text-slate-600" />{" "}
+                              <span className="text-slate-600 text-[13px] font-normal">
+                                Add to Cart
+                              </span>
+                            </>
+                          }
+                        ></SecondaryButton>
+                      </div>
+                    )}
+                  </div>
+                </Link>
               </div>
             ))}
 
