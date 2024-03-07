@@ -19,7 +19,7 @@ const WhyWeCreatedOnyx = () => {
       </div>
 
       <div className="bg-black text-white container lg:ml-[22vw] text-center p-8 lg:p-20 ">
-        <div className="w-full mx-auto  lg:max-w-lg">
+        <div className="w-full mx-auto pl-6 lg:max-w-lg">
           <h3 className="text-sm font-medium text-center my-3">
             {whyWeCreatedOnyxSubTitle}
           </h3>
