@@ -12,13 +12,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const NavAd = () => {
     return (
-        <div className='max-w-xl mx-auto text-white '>
+        <div className='max-w-xl mx-auto pt-2 text-white '>
           
-            <Swiper
+          <div className='text-white'>
+          <Swiper
                 rewind={true}
-                navigation={true}
+                navigation={true} 
                 modules={[Navigation]}
-                className="mySwiper text-center text-sm text-white"
+                className="mySwiper  text-center text-sm text-white"
             >
                 <SwiperSlide>10% OFF for First Time Purchase</SwiperSlide>
                 <SwiperSlide>Free Shipping over RM150 for WM</SwiperSlide>
@@ -26,6 +27,7 @@ const NavAd = () => {
 
                 <SwiperSlide>Buy 1 Get 50% OFF Shipping for WM</SwiperSlide>
             </Swiper>
+          </div>
         </div>
     );
 };
