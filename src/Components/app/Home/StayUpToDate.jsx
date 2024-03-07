@@ -40,11 +40,11 @@ const StayUpToDate = () => {
           {stayUpToDateRightSection?.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col w-[80vw] lg:w-full  md:flex-row gap-5 mb-2 lg:mb-10"
+              className="flex flex-col w-[80vw] lg:w-full h-full md:flex-row gap-5 mb-2 lg:mb-10"
             >
-              <div className="flex-1 group w-[80vw] lg:w-full h-full rounded-xl overflow-hidden relative">
+              <div className="flex-1 flex-grow group w-[80vw] lg:w-full h-full rounded-xl overflow-hidden relative">
                 <img
-                  className=" hover:scale-105 h-auto  w-full  duration-500 rounded-xl"
+                  className=" hover:scale-105 flex-grow min-h-full h-full  w-[344px]  lg:w-full px-2  duration-500 rounded-xl"
                   src={item?.stayUpToDateImage}
                   alt=""
                 />
