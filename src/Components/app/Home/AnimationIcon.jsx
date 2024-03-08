@@ -11,7 +11,7 @@ const Animation = () => {
             <div className="fixed -rotate-90 w-[150px] h-[120px] top-1/2 left-0 transform text-center justify-center  z-30">
             {/* <Lottie animationData={AnimationData} /> */}
           <div className=' bg-black border-white text-white rounded-md p-2 flex justify-center'>
-          <h1 className=' text-white  flex '><span>10% OFF</span> <span> 👀</span></h1>
+          <h1 className=' text-white   flex '><span className=''>10% OFF </span> <span> 👀</span></h1>
          
           </div>
         </div>
