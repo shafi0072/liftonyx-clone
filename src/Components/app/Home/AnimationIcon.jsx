@@ -16,7 +16,7 @@ const Animation = () => {
           </div>
         </div>
       </div>
-      <div className="fixed w-20 h-20 lg:w-[120px] lg:h-[120px] top-1/2 right-0 lg:-right-4 transform -translate-y-1/2 z-50">
+      <div className="fixed w-20 h-20 lg:w-[80px] lg:h-[80px] top-1/2 right-0 lg:right-4 transform -translate-y-1/2 z-50">
         <Lottie animationData={AnimationData} />
       </div>
     </div>

@@ -11,6 +11,10 @@ export const footerData = [
         link:""
       },
       {
+        name: "Career",
+        link:""
+      },
+      {
         name: "FAQs",
         link:""
       },
