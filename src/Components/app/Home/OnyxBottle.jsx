@@ -6,6 +6,8 @@ import { FaPlus } from "react-icons/fa6";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { productData } from "@/src/constant/allProductData";
+import Link from "next/link";
+import Image from "next/image";
 
 const OnyxBottle = () => {
   const [hoveredStates, setHoveredStates] = useState(
@@ -37,7 +39,10 @@ const OnyxBottle = () => {
 
       <div className=" overflow-x-auto  flex gap-3 max-w-2xl lg:max-w-full ">
         {productData?.slice(8, 11)?.map((item, itemIndex) => (
-          <div className="min-w-[60vw] lg:min-w-[30%]  w-full ml-3" key={itemIndex}>
+          <div
+            className="min-w-[60vw] lg:min-w-[30%]  w-full ml-3"
+            key={itemIndex}
+          >
             {item?.image?.map((bottle, imageIndex) => (
               <div
                 key={imageIndex}
@@ -45,15 +50,19 @@ const OnyxBottle = () => {
                 onMouseEnter={() => handleMouseEnter(itemIndex, imageIndex)}
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
-                <img
-                  className="w-full h-full rounded-md "
-                  src={
-                    hoveredStates[itemIndex][imageIndex]
-                      ? bottle?.mainImage2
-                      : bottle?.mainImage1
-                  }
-                  alt="Product Image"
-                />
+                <Link className="w-full" href={`/productDetails/${item?.id}`}>
+                  <div className="p-1">
+                    <Image height={100} width={100}
+                      className="w-full h-full rounded-md "
+                      src={
+                        hoveredStates[itemIndex][imageIndex]
+                          ? bottle?.mainImage2
+                          : bottle?.mainImage1
+                      }
+                      alt="Product Image"
+                    />
+                  </div>
+                </Link>
 
                 <div>
                   {hoveredStates[itemIndex][imageIndex] && (
@@ -74,10 +83,12 @@ const OnyxBottle = () => {
 
             <div className="my-5 ">
               <h2 className="text-center font-medium">{item?.title}</h2>
-            <div className="flex justify-center gap-4 w[70%] mx-auto">
-            <p className="text-center font-medium">TK {item?.money}</p>
-              <p className="text-center font-semibold line-through">TK {item?.money}</p>
-            </div>
+              <div className="flex justify-center gap-4 w[70%] mx-auto">
+                <p className="text-center font-medium">TK {item?.money}</p>
+                <p className="text-center font-semibold line-through">
+                  TK {item?.money}
+                </p>
+              </div>
               {/* <p className="text-center font-medium">{parseInt(item?.money * 0.1)}</p> */}
               {/* <p className="text-center font-medium">{parseInt(Number(item?.money) * 0.1)}</p> */}
               {/* <div>
@@ -87,8 +98,6 @@ const OnyxBottle = () => {
     </p>
   )}
 </div> */}
-
-
 
               <div className="flex justify-center">
                 <Rating

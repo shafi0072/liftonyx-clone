@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import PrimaryButton from "@/src/Components/core/shared/PrimaryButton/PrimaryButton";
+import { productData } from "@/src/constant/allProductData";
 import whatsApp from "../../../../../public/wp.json";
 import Lottie from "lottie-react";
 
 const Details = ({ id }) => {
+  // console.log(productData);
   const [count, setCount] = useState(1);
   const [selectedProductImage, setSelectedProductImage] = useState(null);
   const [allProductData, setAllProductData] = useState([]);
@@ -26,8 +28,8 @@ const Details = ({ id }) => {
     setAllProductData(parseData);
   }, []);
 
-  const product =
-    allProductData && allProductData?.find((data) => data?.id === id);
+  const product = productData && productData?.find((data) => data?.id === id);
+  // console.log(allProductData,"all");
   console.log(product);
 
   const parseMoney = (money) => {
@@ -52,11 +54,11 @@ const Details = ({ id }) => {
   };
 
   return (
-    <div className="max-w-screen-xl mx-auto mt-28 px-5 my-20">
-      <div className="md:flex justify-between">
+    <div className="max-w-screen-xl mx-auto mt-[116] lg:mt-40 px-5 my-24">
+      <div className="md:flex my-6 justify-evenly gap-6">
         <div>
           <img
-            className="md:w-[650px] md:h-[700px] w-full h-full rounded-xl"
+            className="md:w-[650px] md:h-[700px]  w-full h-full rounded-xl"
             src={selectedProductImage || product?.image[0]?.mainImage1}
             alt="product"
           />
@@ -87,7 +89,7 @@ const Details = ({ id }) => {
               </div>
             ))}
           </div>
-          <div className= " my-2 lg:mt-10 order-5 lg:order-5">
+          <div className=" my-2 lg:mt-10 order-5 lg:order-5">
             <h1>Quantity:</h1>
             <div className="border-2 cursor-pointer mt-2 py-2 text-lg font-bold flex justify-between px-5 w-40">
               <div onClick={handleDecrement}>-</div>
@@ -99,12 +101,6 @@ const Details = ({ id }) => {
             <PrimaryButton title={"CheckOut"} />
           </div>
         </div>
-
-        <section className="bg-[#EEF1F5] my-6 md:my-8">
-          <div className="mx-auto">
-            <h1 className="text-center text-[44px] font-semibold text-[#282828]">WHY ONYX BOTTLE?</h1>
-          </div>
-        </section>
       </div>
     </div>
   );

@@ -15,8 +15,9 @@ const index = () => {
         <div className="">
           <img src={footerLogo} alt="logo" />
         </div>
+        <div className="block lg:hidden"></div>
         {footerData?.map((item, index) => (
-          <div key={index}>
+          <div key={index}  >
             <h1 className="text-xl font-semibold mb-3">{item?.title}</h1>
             <ul className="space-y-2 ">
               {item?.list?.map((name) => (

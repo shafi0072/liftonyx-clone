@@ -12,7 +12,7 @@ const WhyWeCreatedOnyx = () => {
     <div className="relative ">
       <div className="max-w-screen-xl mx-auto px-3">
         <img
-          className="lg:absolute lg:top-12 w-full lg:w-[500px] rounded-xl"
+          className="lg:absolute lg:top-16 lg:left-[3%] w-full px-7 lg:w-[500px] rounded-xl"
           src={whyWeCreatedOnyxImage}
           alt=""
         />

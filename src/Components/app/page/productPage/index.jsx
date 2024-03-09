@@ -11,6 +11,7 @@ const Flask = () => {
 
   const pathname = router.pathname;
   const name = pathname.slice(1);
+  console.log(pathname);
 
   const product =
     productData &&

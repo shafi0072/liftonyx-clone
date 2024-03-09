@@ -7,6 +7,7 @@ import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { displayFlask } from "@/src/constant/home/onyxFlask";
 import { productData } from "@/src/constant/allProductData";
+import Link from "next/link";
 
 const OnyxFlask = () => {
   const [hoveredStates, setHoveredStates] = useState(
@@ -49,15 +50,17 @@ const OnyxFlask = () => {
                 onMouseEnter={() => handleMouseEnter(itemIndex, imageIndex)}
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
-                <img
-                  className="w-full h-full duration-500 rounded-md"
-                  src={
-                    hoveredStates[itemIndex][imageIndex]
-                      ? flask?.mainImage2
-                      : flask?.mainImage1
-                  }
-                  alt="Product Image"
-                />
+                <Link href={`/productDetails/${item?.id}`}>
+                  <img
+                    className="w-full h-full duration-500 rounded-md"
+                    src={
+                      hoveredStates[itemIndex][imageIndex]
+                        ? flask?.mainImage2
+                        : flask?.mainImage1
+                    }
+                    alt="Product Image"
+                  />
+                </Link>
 
                 <div>
                   {hoveredStates[itemIndex][imageIndex] && (
@@ -79,8 +82,10 @@ const OnyxFlask = () => {
             <div className="my-5">
               <h2 className="text-center font-medium">{item?.title}</h2>
               <div className="flex justify-center gap-4">
-              <p className="text-center font-medium">{item?.money}</p>
-              <p className="text-center font-semibold line-through">{item?.money}</p>
+                <p className="text-center font-medium">{item?.money}</p>
+                <p className="text-center font-semibold line-through">
+                  {item?.money}
+                </p>
               </div>
               <div className="flex justify-center">
                 <Rating

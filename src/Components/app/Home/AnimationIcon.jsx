@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 import Lottie from "lottie-react";
 // import AnimationData from "../../../../public/assets/animation/Animation.json";
-import AnimationData from "../../../../public/assets/animation/Animation .json"
-
+import AnimationData from "../../../../public/assets/animation/Animation .json";
 
 const Animation = () => {
     return (
