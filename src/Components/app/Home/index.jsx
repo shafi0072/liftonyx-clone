@@ -22,7 +22,6 @@ const index = () => {
       <WhyWeCreatedOnyx />
       <StayUpToDate />
       <OurService/>
-      {/* <Lottie animationData={Animation}></Lottie> */}
      <AnimationIcon></AnimationIcon>
       
     </div>
