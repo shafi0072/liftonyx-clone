@@ -30,8 +30,8 @@ const OnyxBottle = () => {
 
   return (
     <div className="max-w-5xl mx-auto px-3 py-14 ">
-      <div className="pb-10 ">
-        <SectionTitle
+      <div className="pb-10  text-black">
+        <SectionTitle 
           subTitle={"THE FIRST TRIPOD BOTTLE IN MALAYSIA"}
           title={"ONYX Bottle"}
         ></SectionTitle>

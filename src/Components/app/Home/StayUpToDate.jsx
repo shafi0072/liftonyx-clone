@@ -12,7 +12,7 @@ const StayUpToDate = () => {
   // console.log(stayUpToDateImage1Description);
   return (
     <div className="max-w-screen-xl mx-auto px-3 py-6 lg:py-20">
-      <div className="pb-10">
+      <div className="pb-10 ">
         <SectionTitle
           subTitle={stayUpToDateSubHeading}
           title={stayUpToDateHeading}
@@ -31,7 +31,7 @@ const StayUpToDate = () => {
               <FaArrowRight className="text-2xl "></FaArrowRight>
             </div>
           </div>
-          <h2 className=" text-xl lg:text-4xl mt-4 lg:mt-8 font-semibold mx-1">
+          <h2 className=" lg:text-[40px] mt-4 lg:mt-8 font-semibold  mx-1">
             {stayUpToDateImage1Description}
           </h2>
         </div>
@@ -40,7 +40,7 @@ const StayUpToDate = () => {
           {stayUpToDateRightSection?.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col w-[80vw] lg:w-full h-full md:flex-row gap-5 mb-2 lg:mb-10"
+              className="flex flex-col w-[80vw] lg:w-full  md:flex-row gap-5 mb-2 "
             >
               <div className="flex-1 flex-grow group w-[80vw] lg:w-full h-full rounded-xl overflow-hidden relative">
                 <img
@@ -55,7 +55,7 @@ const StayUpToDate = () => {
               </div>
               <div className="flex-1 flex items-start lg:items-center">
                 <div>
-                  <p className="text-sm font-medium">
+                  <p className="text-sm  font-medium">
                     {item?.stayUpToDateHeading}
                   </p>
                   <h2 className="text-2xl font-semibold">

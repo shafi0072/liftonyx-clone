@@ -56,8 +56,8 @@ const index = () => {
   );
 
   return (
-    <div className="bg-black fixed top-0 z-10 w-full  text-white py-3">
-      <div className="bg-[#282828] w-full pt-4 pb-3 -mt-4 text-white ">
+    <div className="bg-black fixed top-0 z-10 w-full text-white py-3">
+      <div className="bg-gray-800  pt-4 pb-3 -mt-4 ">
 
    <NavAd></NavAd>
    
