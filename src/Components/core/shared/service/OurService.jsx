@@ -8,7 +8,7 @@ const OurService = () => {
 
   return (
     <div
-      className={` py-5 px-20 bg-gray-100 ${
+      className={` py-5 px-2 lg:px-20 bg-gray-100 ${
         name === "/" ? "mt-3 lg:mt-14" : ""
       }`}
     >

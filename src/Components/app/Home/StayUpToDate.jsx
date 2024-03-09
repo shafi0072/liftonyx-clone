@@ -7,6 +7,7 @@ import {
 } from "@/src/constant/home/stayUpToDate";
 import SectionTitle from "../../core/shared/SectionTitle/SectionTitle";
 import { FaArrowRight } from "react-icons/fa6";
+import Image from "next/image";
 
 const StayUpToDate = () => {
   // console.log(stayUpToDateImage1Description);
@@ -42,19 +43,21 @@ const StayUpToDate = () => {
               key={index}
               className="flex flex-col w-[80vw] lg:w-full  md:flex-row gap-5 mb-2 "
             >
-              <div className="flex-1 flex-grow group w-[80vw] lg:w-full h-full rounded-xl overflow-hidden relative">
-                <img
+              <div className="  group w-[80vw] lg:w-full h-full rounded-xl overflow-hidden relative">
+                <Image 
+                width={200}
+                height={300}
                   className=" hover:scale-105 flex-grow min-h-full h-full  w-[344px]  lg:w-full px-2  duration-500 rounded-xl"
                   src={item?.stayUpToDateImage}
-                  alt=""
+                  alt="image"
                 />
 
                 <div className=" bg-white   p-4 rounded-md  right-3 bottom-3 absolute    opacity-0 duration-500 transition  ease-out  group-hover:opacity-100 ">
                   <FaArrowRight className="text-2xl "></FaArrowRight>
                 </div>
               </div>
-              <div className="flex-1 flex items-start lg:items-center">
-                <div>
+              <div className=" flex items-start lg:items-center">
+                <div className="w-full">
                   <p className="text-sm  font-medium">
                     {item?.stayUpToDateHeading}
                   </p>
