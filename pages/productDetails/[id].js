@@ -6,7 +6,7 @@ const index = () => {
     const router = useRouter();
     const id = router?.query?.id;
     return (
-        <div className='mt-32'>
+        <div className=' mt-36 lg:mt-32 '>
             <Details id={id}/>
         </div>
     );

@@ -57,11 +57,8 @@ const index = () => {
 
   return (
     <div className="bg-black fixed top-0 z-10 w-full text-white py-3">
-      <div className="bg-gray-800  pt-4 pb-3 -mt-4 ">
-
-   <NavAd></NavAd>
-   
-
+      <div className="bg-[#282828]  pt-4 pb-3 -mt-4 ">
+        <NavAd></NavAd>
       </div>
       <div className="navbar  lg:flex lg:justify-between container mx-auto px-3">
         <div className="navbar-start">
