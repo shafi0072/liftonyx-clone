@@ -31,7 +31,7 @@ const OnyxBottle = () => {
   return (
     <div className="max-w-5xl mx-auto px-3 pt-14  pb-6">
       <div className=" pb-10  text-black">
-        <SectionTitle 
+        <SectionTitle
           subTitle={"THE FIRST TRIPOD BOTTLE IN MALAYSIA"}
           title={"ONYX Bottle"}
         ></SectionTitle>
@@ -50,19 +50,21 @@ const OnyxBottle = () => {
                 onMouseEnter={() => handleMouseEnter(itemIndex, imageIndex)}
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
-                <Link className="w-full" href={`/productDetails/${item?.id}`}>
-                  <div className="p-1">
-                    <Image height={100} width={100}
-                      className="w-full h-full rounded-md "
-                      src={
-                        hoveredStates[itemIndex][imageIndex]
-                          ? bottle?.mainImage2
-                          : bottle?.mainImage1
-                      }
-                      alt="Product Image"
-                    />
-                  </div>
-                </Link>
+                <div className="p-1">
+                  <Link className="w-full z-50" href={`/productDetails/${item?.id}`}>
+                      <Image
+                        height={100}
+                        width={100}
+                        className="w-full h-full rounded-md "
+                        src={
+                          hoveredStates[itemIndex][imageIndex]
+                            ? bottle?.mainImage2
+                            : bottle?.mainImage1
+                        }
+                        alt="Product Image"
+                      />
+                  </Link>
+                </div>
 
                 <div>
                   {hoveredStates[itemIndex][imageIndex] && (

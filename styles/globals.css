@@ -14,3 +14,7 @@ body {
 .button{
   @apply absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px]
 }
+
+.swiper-button-prev, .swiper-button-next{
+  color: white !important;;
+}
