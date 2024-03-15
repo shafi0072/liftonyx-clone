@@ -96,7 +96,7 @@ const FlaskProduct = ({ product }) => {
               >
                 <Link href={`/productDetails/${item?.id}`}>
                   <img
-                    className="w-full h-full rounded-md"
+                    className="w-full  h-full rounded-md"
                     src={
                       hoveredStates[itemIndex][imageIndex]
                         ? bottle?.mainImage2
@@ -104,25 +104,26 @@ const FlaskProduct = ({ product }) => {
                     }
                     alt="Product Image"
                   />
-
-                  <div>
-                    {hoveredStates[itemIndex][imageIndex] && (
-                      <div className="absolute inset-0 flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px] ">
-                        <SecondaryButton
-                          item={item}
-                          title={
-                            <>
-                              <FaPlus className="text-[12px] text-slate-600" />{" "}
-                              <span className="text-slate-600 text-[13px] font-normal">
-                                Add to Cart
-                              </span>
-                            </>
-                          }
-                        ></SecondaryButton>
-                      </div>
-                    )}
-                  </div>
                 </Link>
+
+                <div>
+                  {hoveredStates[itemIndex][imageIndex] && (
+                    <div className="absolute bottom-2 w-full flex flex-col justify-end items-center text-white transition-opacity opacity-100 group-hover:opacity-100 transform group-hover:translate-y-[-14px] ">
+                      <SecondaryButton
+                        item={item}
+                        title={
+                          <>
+                            <FaPlus className="text-[12px] text-slate-600" />{" "}
+                            <span className="text-slate-600 text-[13px] font-normal">
+                              Add to Cart
+                            </span>
+                          </>
+                        }
+                      ></SecondaryButton>
+                    </div>
+                  )}
+                </div>
+                {/* </Link> */}
               </div>
             ))}
 

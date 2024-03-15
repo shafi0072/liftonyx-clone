@@ -51,24 +51,27 @@ const OnyxBottle = () => {
                 onMouseLeave={() => handleMouseLeave(itemIndex, imageIndex)}
               >
                 <div className="p-1">
-                  <Link className="w-full z-50" href={`/productDetails/${item?.id}`}>
-                      <Image
-                        height={100}
-                        width={100}
-                        className="w-full h-full rounded-md "
-                        src={
-                          hoveredStates[itemIndex][imageIndex]
-                            ? bottle?.mainImage2
-                            : bottle?.mainImage1
-                        }
-                        alt="Product Image"
-                      />
+                  <Link
+                    className="w-full "
+                    href={`/productDetails/${item?.id}`}
+                  >
+                    <Image
+                      height={100}
+                      width={100}
+                      className="w-full h-full rounded-md "
+                      src={
+                        hoveredStates[itemIndex][imageIndex]
+                          ? bottle?.mainImage2
+                          : bottle?.mainImage1
+                      }
+                      alt="Product Image"
+                    />
                   </Link>
                 </div>
 
                 <div>
                   {hoveredStates[itemIndex][imageIndex] && (
-                    <div className="absolute inset-0 flex flex-col justify-end items-center text-white  transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100 transform  group-hover:translate-y-[-14px]">
+                    <div className="absolute w-full bottom-1 flex flex-col justify-end items-center text-white  transition-all ease-in-out duration-500 opacity-0 group-hover:opacity-100 transform  group-hover:translate-y-[-14px]">
                       <SecondaryButton
                         item={item}
                         title={
